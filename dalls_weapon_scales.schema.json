@@ -1,0 +1,118 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Dalls weapon local mesh scale table",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "table_id",
+    "application",
+    "counts",
+    "meshes"
+  ],
+  "properties": {
+    "schema_version": {
+      "const": 1
+    },
+    "meshes": {
+      "type": "object",
+      "propertyNames": {
+        "pattern": "^[a-z0-9_]+\\.msh$"
+      },
+      "additionalProperties": {
+        "type": "object",
+        "required": [
+          "enabled",
+          "status",
+          "uniform_scale",
+          "reference_sha256"
+        ],
+        "properties": {
+          "enabled": {
+            "type": "boolean"
+          },
+          "status": {
+            "enum": [
+              "verified_comparison_nominal_estimated",
+              "unresolved_vanilla_reference",
+              "user_defined_custom"
+            ]
+          },
+          "uniform_scale": {
+            "type": [
+              "number",
+              "null"
+            ]
+          },
+          "reference_sha256": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "accepted_references": {
+            "type": "array",
+            "maxItems": 64,
+            "items": {
+              "type": "object",
+              "required": [
+                "enabled",
+                "reference_sha256",
+                "uniform_scale"
+              ],
+              "properties": {
+                "enabled": {
+                  "type": "boolean"
+                },
+                "reference_sha256": {
+                  "type": "string",
+                  "pattern": "^[0-9a-f]{64}$"
+                },
+                "uniform_scale": {
+                  "type": "number",
+                  "minimum": 0.05,
+                  "maximum": 10
+                },
+                "label": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        },
+        "allOf": [
+          {
+            "if": {
+              "properties": {
+                "enabled": {
+                  "const": true
+                }
+              }
+            },
+            "then": {
+              "properties": {
+                "uniform_scale": {
+                  "type": "number",
+                  "exclusiveMinimum": 0
+                },
+                "reference_sha256": {
+                  "type": "string",
+                  "pattern": "^[0-9a-f]{64}$"
+                }
+              }
+            },
+            "else": {
+              "properties": {
+                "uniform_scale": {
+                  "type": "null"
+                },
+                "reference_sha256": {
+                  "type": "null"
+                }
+              }
+            }
+          }
+        ]
+      }
+    }
+  }
+}

@@ -1,0 +1,2546 @@
+{
+  "$schema": "./dalls_weapon_scales.schema.json",
+  "schema_version": 1,
+  "table_id": "dalls_weapon_mesh_local_scales",
+  "table_version": "1.3.3",
+  "source_archive_sha256": "b135028a7149fa7b0661c79355d6b2701b305e3abe3428f38c18ca451048ae1a",
+  "factor_semantics": "Nominal uniform linear factors estimated by rounding measured vanilla-to-Dalls geometry fits to 0.01. Not recovered author settings; not byte-exact Dalls reproduction. Custom entries explicitly marked user_defined_custom use user-selected factors relative to the exact installed mesh, not a vanilla-to-Dalls fit.",
+  "resource_key_policy": "basename only; ASCII lowercase; .msh extension retained; exact match; no prefix or family fallback",
+  "application": {
+    "space": "mesh_local",
+    "pivot": [
+      0,
+      0,
+      0
+    ],
+    "operation": "position_xyz *= uniform_scale",
+    "scale_xyz": "Use the same uniform_scale on X, Y and Z",
+    "preserve": [
+      "position_w",
+      "indices",
+      "UVs",
+      "normals",
+      "tangents",
+      "vertex_weights",
+      "bone_indices",
+      "material_and_texture_references"
+    ],
+    "normal_rule": "Positive uniform scaling preserves normal/tangent direction. Do not multiply direction vectors by the scale.",
+    "strict_reference_sha256": true,
+    "unknown_resource_action": "skip",
+    "unresolved_resource_action": "skip",
+    "hash_mismatch_action": "skip",
+    "application_count": "once per fresh reference vertex buffer; recompute from original positions rather than multiply current positions each frame",
+    "scope": "Mesh geometry only. MMH hierarchy offsets, bounds, PHY collision data, skeletons and attachment transforms require separate integration; they must not be guessed from this table."
+  },
+  "counts": {
+    "total": 99,
+    "enabled": 99,
+    "unresolved": 0
+  },
+  "meshes": {
+    "w_arr_la01a_0.msh": {
+      "enabled": true,
+      "status": "verified_comparison_nominal_estimated",
+      "category": "Arrow Rescaled",
+      "uniform_scale": 0.87,
+      "reference_sha256": "839c4c51fd376101be0a72cfeb11bc65a904025d24bb17d543ed7d543dfe6450",
+      "target_dalls_sha256": "77179e46b9d39e12ea4003e207fa774c2bbf0e3a3029568c65681f12af35467d",
+      "reference_vertices": 189,
+      "reference_triangles": 63,
+      "measurement": {
+        "uniform_origin_fit": 0.8697425561259322,
+        "max_position_residual": 0.0002394837328071331,
+        "axis_scale_fit": [
+          0.8695658947590588,
+          0.8697454303577038,
+          0.8697331166734913
+        ],
+        "axis_translation_fit": [
+          -1.1051290862601839e-07,
+          -2.3324837964286823e-06,
+          -2.5496940414053088e-08
+        ]
+      },
+      "note": null
+    },
+    "w_axe_ax01a_0.msh": {
+      "enabled": true,
+      "status": "verified_comparison_nominal_estimated",
+      "category": "Axes Rescaled",
+      "uniform_scale": 0.82,
+      "reference_sha256": "9e228d12e64b0b73096543905820128688a6dfb222851fb11761d62342bf160e",
+      "target_dalls_sha256": "54ab67e9aa18f128bfa0049e7f103c61afb5abec17eb6bf653cdf494d87c8766",
+      "reference_vertices": 812,
+      "reference_triangles": 920,
+      "measurement": {
+        "uniform_origin_fit": 0.8197624762137309,
+        "max_position_residual": 0.00016450972644022066,
+        "axis_scale_fit": [
+          0.8197728404417185,
+          0.8197945143813853,
+          0.8197622214724392
+        ],
+        "axis_translation_fit": [
+          2.811695522089511e-07,
+          4.0262514532248754e-07,
+          -1.5453951775554947e-07
+        ]
+      },
+      "note": null
+    },
+    "w_axe_ax02a_0.msh": {
+      "enabled": true,
+      "status": "verified_comparison_nominal_estimated",
+      "category": "Axes Rescaled",
+      "uniform_scale": 0.82,
+      "reference_sha256": "f55a0c56e83b63c64602d2360e356dd2513a3d74b04b3dabd23a3571997735da",
+      "target_dalls_sha256": "1bd101bdf2e40013d3041fe1b86739dda20da96b15bb622ec449c2400af53f80",
+      "reference_vertices": 503,
+      "reference_triangles": 566,
+      "measurement": {
+        "uniform_origin_fit": 0.8197360198623513,
+        "max_position_residual": 0.00014043992681417317,
+        "axis_scale_fit": [
+          0.8197295607347835,
+          0.8197201354097322,
+          0.8197401544050259
+        ],
+        "axis_translation_fit": [
+          4.0911003377586675e-06,
+          -4.253078499877129e-07,
+          -1.8966457884494404e-06
+        ]
+      },
+      "note": null
+    },
+    "w_axe_ax03a_0.msh": {
+      "enabled": true,
+      "status": "verified_comparison_nominal_estimated",
+      "category": "Axes Rescaled",
+      "uniform_scale": 0.82,
+      "reference_sha256": "696f65cde2e61dafd653cbe1f3ef7673c08dfcbabc58f2162d47c8ec56d7aec5",
+      "target_dalls_sha256": "f2aab5cdfb9ff0f2992011b5bbef5099030eb2eb7125ef66da3e4acf5b17c925",
+      "reference_vertices": 502,
+      "reference_triangles": 638,
+      "measurement": {
+        "uniform_origin_fit": 0.8197006272248625,
+        "max_position_residual": 0.00014983256568162906,
+        "axis_scale_fit": [
+          0.8197374824662328,
+          0.8197222934212527,
+          0.8197090938944835
+        ],
+        "axis_translation_fit": [
+          -8.050750099859047e-08,
+          4.573842701717071e-07,
+          -7.085460735145352e-06
+        ]
+      },
+      "note": null
+    },
+    "w_axe_ax04a_0.msh": {
+      "enabled": true,
+      "status": "verified_comparison_nominal_estimated",
+      "category": "Axes Rescaled",
+      "uniform_scale": 0.83,
+      "reference_sha256": "8f77c1d645b41ffd9ec0480ef29a6f6f365586bae13bd5db445e2c5ce10138b2",
+      "target_dalls_sha256": "0794e1b5670e87e6ffa409768382444200b777336f45c7685d3a28fbce3417d9",
+      "reference_vertices": 558,
+      "reference_triangles": 714,
+      "measurement": {
+        "uniform_origin_fit": 0.8297339782946573,
+        "max_position_residual": 0.00014733165579516871,
+        "axis_scale_fit": [
+          0.8297288499002754,
+          0.8297267580104826,
+          0.8297163451461419
+        ],
+        "axis_translation_fit": [
+          5.2844582864993295e-08,
+          7.086103892086086e-07,
+          9.193322794817614e-06
+        ]
+      },
+      "note": null
+    },
+    "w_axe_ax05a_0.msh": {
+      "enabled": true,
+      "status": "verified_comparison_nominal_estimated",
+      "category": "Axes Rescaled",
+      "uniform_scale": 0.87,
+      "reference_sha256": "e0cba702eb0b7da178731e2f71d163bf5f4b8a2f4e8d99247b727d674f4010a3",
+      "target_dalls_sha256": "954efd38e17c0b1d73b5c110794d3df5bc086c726bc8a48d4375c1e79534c078",
+      "reference_vertices": 725,
+      "reference_triangles": 848,
+      "measurement": {
+        "uniform_origin_fit": 0.8697068007825123,
+        "max_position_residual": 0.00017179641649667232,
+        "axis_scale_fit": [
+          0.8696951066406128,
+          0.8697150710822233,
+          0.8697233637539186
+        ],
+        "axis_translation_fit": [
+          3.624360342540778e-07,
+          5.208542811853727e-07,
+          -8.227255870024503e-06
+        ]
+      },
+      "note": null
+    },
+    "w_axe_ax06a_0.msh": {
+      "enabled": true,
+      "status": "verified_comparison_nominal_estimated",
+      "category": "Axes Rescaled",
+      "uniform_scale": 0.83,
+      "reference_sha256": "d8f7b82c23c44663048449e178ba9bf07b217b1cfe84ce4d0b66c4eb859028d3",
+      "target_dalls_sha256": "bf013bbde8c77a90f4a18ac58b44f5e6a0a02a0eb20f54cd3c198467061d2c5e",
+      "reference_vertices": 849,
+      "reference_triangles": 680,
+      "measurement": {
+        "uniform_origin_fit": 0.8297175534560426,
+        "max_position_residual": 0.00014480901911878563,
+        "axis_scale_fit": [
+          0.8297697853518786,
+          0.8297384894773484,
+          0.8297588556509512
+        ],
+        "axis_translation_fit": [
+          -1.6425780554957842e-07,
+          -3.8944145030595766e-07,
+          -1.8166427305461135e-05
+        ]
+      },
+      "note": null
+    },
+    "w_axe_dsaxa_0.msh": {
+      "enabled": true,
+      "status": "verified_comparison_nominal_estimated",
+      "category": "Axes Rescaled",
+      "uniform_scale": 0.86,
+      "reference_sha256": "2e7bea563524acc7928baa093991a81a1791577b070b50e900e1316f81246f60",
+      "target_dalls_sha256": "f626a978c668922ff2de220f4693934eb1d618b3263eeb9effb54e88316b5a24",
+      "reference_vertices": 772,
+      "reference_triangles": 884,
+      "measurement": {
+        "uniform_origin_fit": 0.8596951000563573,
+        "max_position_residual": 0.00014515500246664592,
+        "axis_scale_fit": [
+          0.8597410633216276,
+          0.8597242596120469,
+          0.8597018973276547
+        ],
+        "axis_translation_fit": [
+          2.6594589559627957e-08,
+          2.9589641715459164e-08,
+          -3.1857649680861674e-06
+        ]
+      },
+      "note": null
+    },
+    "w_blt_la01a_0.msh": {
+      "enabled": true,
+      "status": "verified_comparison_nominal_estimated",
+      "category": "Crossbow Bolt",
+      "uniform_scale": 0.75,
+      "reference_sha256": "ab0772183361b11e05bccd282a2c04545a34bd515e6170eb10746f2ef8ead613",
+      "target_dalls_sha256": "4290fe50ceb9d59f584041658bae0d64cff3b552e4df69e42936a9510340d24b",
+      "reference_vertices": 189,
+      "reference_triangles": 63,
+      "measurement": {
+        "uniform_origin_fit": 0.7497475059524509,
+        "max_position_residual": 0.00021994598673225063,
+        "axis_scale_fit": [
+          0.7497618933141436,
+          0.7495451854716298,
+          0.7498714435181362
+        ],
+        "axis_translation_fit": [
+          -7.286311874663041e-07,
+          0.0001425419063960811,
+          3.9926904243439494e-07
+        ]
+      },
+      "note": null
+    },
+    "w_cbw_cb01a_0.msh": {
+      "enabled": true,
+      "status": "verified_comparison_nominal_estimated",
+      "category": "Crossbows Rescaled",
+      "uniform_scale": 1.15,
+      "reference_sha256": "6a8a2fb1f2284419933deb48e0efcd7b36d6c0d9633f9b9713270569578c2f2a",
+      "target_dalls_sha256": "9ed961fdd39982f4dfbffe9773c386cb8102856ebab601e851266886bd22c895",
+      "reference_vertices": 1484,
+      "reference_triangles": 1271,
+      "measurement": {
+        "uniform_origin_fit": 1.1495632673273737,
+        "max_position_residual": 0.00020040744922722453,
+        "axis_scale_fit": [
+          1.1496386572788826,
+          1.1496201401881025,
+          1.149565869657896
+        ],
+        "axis_translation_fit": [
+          -3.244322979846866e-07,
+          3.028969852603632e-07,
+          -4.792978699937232e-06
+        ]
+      },
+      "note": null
+    },
+    "w_cbw_cb02a_0.msh": {
+      "enabled": true,
+      "status": "verified_comparison_nominal_estimated",
+      "category": "Crossbows Rescaled",
+      "uniform_scale": 1.1,
+      "reference_sha256": "3b846dc6c373d2892451dd5d177e9d6c423199b9834dfc51e7878f3357c33638",
+      "target_dalls_sha256": "151f12ad227cb959178a63240e3f51076ec7943e1cda4a94a226b26c82f02b0b",
+      "reference_vertices": 797,
+      "reference_triangles": 704,
+      "measurement": {
+        "uniform_origin_fit": 1.0997003902353502,
+        "max_position_residual": 0.00016357780149772738,
+        "axis_scale_fit": [
+          1.0996452657731262,
+          1.0996273397276202,
+          1.0997126974735563
+        ],
+        "axis_translation_fit": [
+          8.958427572482801e-07,
+          2.796581014225753e-07,
+          -1.101911574546003e-06
+        ]
+      },
+      "note": null
+    },
+    "w_cbw_cb03a_0.msh": {
+      "enabled": true,
+      "status": "verified_comparison_nominal_estimated",
+      "category": "Crossbows Rescaled",
+      "uniform_scale": 1.2,
+      "reference_sha256": "624475dc1eeae0783786d84ef62b1eba37d35e57f447b301e2f54e3177a72e1d",
+      "target_dalls_sha256": "dfaa282b168a4bd158d9ed8af25a2eaaadd0baed3c7c7419bbbd72bea4bd5342",
+      "reference_vertices": 935,
+      "reference_triangles": 960,
+      "measurement": {
+        "uniform_origin_fit": 1.1996701374281473,
+        "max_position_residual": 0.00012804723858539369,
+        "axis_scale_fit": [
+          1.1996314244805544,
+          1.1996896806300514,
+          1.1996679220711746
+        ],
+        "axis_translation_fit": [
+          -4.108959526442595e-08,
+          -4.1910635467756787e-07,
+          2.9469831782166732e-06
+        ]
+      },
+      "note": null
+    },
+    "w_cbw_cb04a_0.msh": {
+      "enabled": true,
+      "status": "verified_comparison_nominal_estimated",
+      "category": "Crossbows Rescaled",
+      "uniform_scale": 1.15,
+      "reference_sha256": "39600241f238ad5012e395c1d904e79fbb2502f5c1ddd358f2e093a9c44da9a8",
+      "target_dalls_sha256": "c9e1c3c2e3b96ef0a20c5856c1a51d3ebe28be18ebf729e03acd4070b1080291",
+      "reference_vertices": 1237,
+      "reference_triangles": 944,
+      "measurement": {
+        "uniform_origin_fit": 1.1496401758276917,
+        "max_position_residual": 0.00014873992403530156,
+        "axis_scale_fit": [
+          1.1496250271299313,
+          1.1495982649265546,
+          1.1496529751674855
+        ],
+        "axis_translation_fit": [
+          -1.44781642971119e-06,
+          1.3462953074770216e-06,
+          -7.247174577850484e-06
+        ]
+      },
+      "note": null
+    },
+    "w_cbw_cb05a_0.msh": {
+      "enabled": true,
+      "status": "verified_comparison_nominal_estimated",
+      "category": "Crossbows Rescaled",
+      "uniform_scale": 1.15,
+      "reference_sha256": "5b23476c040f7a91b799dce6edbe34daed3cc05105c1112f0eb8db93b05103ee",
+      "target_dalls_sha256": "da9045d1316e0295d7704c7e1dd5a7120429c9983f7d1b3d092a4733949aa76d",
+      "reference_vertices": 1917,
+      "reference_triangles": 1708,
+      "measurement": {
+        "uniform_origin_fit": 1.149614115518797,
+        "max_position_residual": 0.00014215138901702007,
+        "axis_scale_fit": [
+          1.149623389960499,
+          1.1495962096250274,
+          1.1496127892583863
+        ],
+        "axis_translation_fit": [
+          -2.7403930379517777e-08,
+          4.235514778221662e-07,
+          9.07418245736216e-07
+        ]
+      },
+      "note": null
+    },
+    "w_cbw_cb06a_0.msh": {
+      "enabled": true,
+      "status": "verified_comparison_nominal_estimated",
+      "category": "Crossbows Rescaled",
+      "uniform_scale": 1.26,
+      "reference_sha256": "538a862bd38bed48b92231fc71cf796d691d7bdfef58378199cd99f426d13c2c",
+      "target_dalls_sha256": "35465c49b46b2514740314773f1305d66307aada957b0880c56a6da0ecd1ec0b",
+      "reference_vertices": 1737,
+      "reference_triangles": 1516,
+      "measurement": {
+        "uniform_origin_fit": 1.2595222617791395,
+        "max_position_residual": 0.00013570152957814718,
+        "axis_scale_fit": [
+          1.2594553340965735,
+          1.2595635421570983,
+          1.2595406244184582
+        ],
+        "axis_translation_fit": [
+          1.846415059074766e-06,
+          -1.145715357529e-06,
+          1.4392418891088445e-06
+        ]
+      },
+      "note": null
+    },
+    "w_cbw_dscba_0.msh": {
+      "enabled": true,
+      "status": "verified_comparison_nominal_estimated",
+      "category": "Crossbows Rescaled",
+      "uniform_scale": 1.22,
+      "reference_sha256": "a0e68e03ef41aeec0e9e27770a3ce31d9598841cd63dc19d93c15c09353f2b48",
+      "target_dalls_sha256": "af55218f88cace15373aef5d8658e1b237d613e489fe2532f42a986ae246a8c2",
+      "reference_vertices": 1099,
+      "reference_triangles": 1242,
+      "measurement": {
+        "uniform_origin_fit": 1.2195740159855286,
+        "max_position_residual": 0.0002771871811582116,
+        "axis_scale_fit": [
+          1.219580267695009,
+          1.2196145850776479,
+          1.2195680041835408
+        ],
+        "axis_translation_fit": [
+          -5.43862844594425e-08,
+          -9.638118631485868e-08,
+          1.602208926769735e-06
+        ]
+      },
+      "note": null
+    },
+    "w_dgr_dg01a_0.msh": {
+      "enabled": true,
+      "status": "verified_comparison_nominal_estimated",
+      "category": "Daggers Rescaled",
+      "uniform_scale": 0.65,
+      "reference_sha256": "492e1461a92697de22ccabed53fe941fb0af1a04fa94faabd384383792759ea8",
+      "target_dalls_sha256": "e98ec220b40710932e929cd9b113a6fe39ab51d33410cbf1fffc3c67c4c1ffd7",
+      "reference_vertices": 594,
+      "reference_triangles": 670,
+      "measurement": {
+        "uniform_origin_fit": 0.649808503376296,
+        "max_position_residual": 0.00014090251280152177,
+        "axis_scale_fit": [
+          0.6497467309436604,
+          0.6497511032747401,
+          0.6498178721997928
+        ],
+        "axis_translation_fit": [
+          3.0389297693630646e-07,
+          -4.6370116796920903e-07,
+          -5.147877294787899e-06
+        ]
+      },
+      "note": null
+    },
+    "w_dgr_dg02a_0.msh": {
+      "enabled": true,
+      "status": "verified_comparison_nominal_estimated",
+      "category": "Daggers Rescaled",
+      "uniform_scale": 0.67,
+      "reference_sha256": "a3200533c4798f128a259f1578ba1ac303c18f6c18c24efefffa389b889d2f92",
+      "target_dalls_sha256": "bc8618ca2d50cb1f2097288445ddb5cfb812b4678c684107bb839ac60bea68d8",
+      "reference_vertices": 431,
+      "reference_triangles": 400,
+      "measurement": {
+        "uniform_origin_fit": 0.6697695122051635,
+        "max_position_residual": 0.00013267017746143583,
+        "axis_scale_fit": [
+          0.6697111864970967,
+          0.6697976115392594,
+          0.6697997372996168
+        ],
+        "axis_translation_fit": [
+          1.85972541403638e-10,
+          5.340786590070731e-08,
+          -1.0417290348719055e-05
+        ]
+      },
+      "note": null
+    },
+    "w_dgr_dg03a_0.msh": {
+      "enabled": true,
+      "status": "verified_comparison_nominal_estimated",
+      "category": "Daggers Rescaled",
+      "uniform_scale": 0.75,
+      "reference_sha256": "94a7432e9d3ee111e01b160a55a400e1793094ad9b40fa7b302fa71bf600bfae",
+      "target_dalls_sha256": "0993b0a68a3e4f049ad008959522a33ed142912aa09ce467fbf4405488c06d36",
+      "reference_vertices": 473,
+      "reference_triangles": 574,
+      "measurement": {
+        "uniform_origin_fit": 0.7499082091676226,
+        "max_position_residual": 0.0002930464522283849,
+        "axis_scale_fit": [
+          0.7504323850833862,
+          0.7503942736053139,
+          0.7498580071810129
+        ],
+        "axis_translation_fit": [
+          0.00032011847299731134,
+          0.0010607015225567653,
+          -3.072155400274235e-08
+        ]
+      },
+      "note": null
+    },
+    "w_dgr_dg04a_0.msh": {
+      "enabled": true,
+      "status": "verified_comparison_nominal_estimated",
+      "category": "Daggers Rescaled",
+      "uniform_scale": 0.75,
+      "reference_sha256": "dfd43b590678e57fd1c6096ccb507c3354ad6ff4900939eb50f3ae0de5db6bfd",
+      "target_dalls_sha256": "422bc8b5f0703a2c551cc095e4c9ee467131c9608844b6a72ec88c824dee63e9",
+      "reference_vertices": 606,
+      "reference_triangles": 640,
+      "measurement": {
+        "uniform_origin_fit": 0.7498016014821837,
+        "max_position_residual": 0.00011640752953295808,
+        "axis_scale_fit": [
+          0.7498005910367195,
+          0.7498252627726001,
+          0.7497913002664226
+        ],
+        "axis_translation_fit": [
+          -2.3459949706400217e-06,
+          1.5583844495101494e-07,
+          -4.366830074186647e-06
+        ]
+      },
+      "note": null
+    },
+    "w_dgr_dg05a_0.msh": {
+      "enabled": true,
+      "status": "verified_comparison_nominal_estimated",
+      "category": "Daggers Rescaled",
+      "uniform_scale": 0.75,
+      "reference_sha256": "330a7602ab215a4ae294d407ad0aed5d1c8079686fb04fab428aeb49ac6c3b28",
+      "target_dalls_sha256": "c95b93359f1cd86d24f897ed42c39c4e232f3dd99a2d912b01c35fbdc1c37460",
+      "reference_vertices": 782,
+      "reference_triangles": 668,
+      "measurement": {
+        "uniform_origin_fit": 0.7497983276579157,
+        "max_position_residual": 0.00023140164242507755,
+        "axis_scale_fit": [
+          0.7498517262625283,
+          0.7498236808472666,
+          0.7497871052145185
+        ],
+        "axis_translation_fit": [
+          -3.150753626822081e-07,
+          1.5912326514848614e-07,
+          4.336539242523811e-06
+        ]
+      },
+      "note": null
+    },
+    "w_dgr_dg06a_0.msh": {
+      "enabled": true,
+      "status": "verified_comparison_nominal_estimated",
+      "category": "Daggers Rescaled",
+      "uniform_scale": 0.75,
+      "reference_sha256": "2a9779221446d87f22614e9811b3217c8772aaad96003cb9d57fa89f95bbd21b",
+      "target_dalls_sha256": "3418af1570e949d10841d21e09d801ad73a1a921e652f368928a7a44c60ff677",
+      "reference_vertices": 585,
+      "reference_triangles": 656,
+      "measurement": {
+        "uniform_origin_fit": 0.7497692590306031,
+        "max_position_residual": 0.00020340786094796837,
+        "axis_scale_fit": [
+          0.7498606173424132,
+          0.7498118087809106,
+          0.7497793509041888
+        ],
+        "axis_translation_fit": [
+          -1.1043715660057559e-08,
+          -8.067076753662339e-08,
+          -4.893656222470969e-06
+        ]
+      },
+      "note": null
+    },
+    "w_dgr_dsdga_0.msh": {
+      "enabled": true,
+      "status": "verified_comparison_nominal_estimated",
+      "category": "Daggers Rescaled",
+      "uniform_scale": 1.15,
+      "reference_sha256": "ca58d2806e71e8601265c31b55695599a22a8080fd78de87959d54b978ff5d17",
+      "target_dalls_sha256": "c6780844015fd6e6c08348ad2dbd23348c729b0c45b7acab78fc59375a36b0a8",
+      "reference_vertices": 693,
+      "reference_triangles": 860,
+      "measurement": {
+        "uniform_origin_fit": 1.149637389758004,
+        "max_position_residual": 0.00027195835501547805,
+        "axis_scale_fit": [
+          1.149578656482399,
+          1.1496051174132105,
+          1.149638317459829
+        ],
+        "axis_translation_fit": [
+          -1.882470167089323e-08,
+          6.790667455694546e-07,
+          1.9832828896158983e-07
+        ]
+      },
+      "note": null
+    },
+    "w_gax_dsgaa_0.msh": {
+      "enabled": true,
+      "status": "verified_comparison_nominal_estimated",
+      "category": "Great Axes Rescaled",
+      "uniform_scale": 0.8,
+      "reference_sha256": "9758cfda7189816ef1b794974d796fb6f3e642593e8d7d5c3a3f22c4991c93f0",
+      "target_dalls_sha256": "6e1f4790b7dec871a84af9aba5163f93951260ec88b6cc95926cb87bd5574deb",
+      "reference_vertices": 951,
+      "reference_triangles": 1002,
+      "measurement": {
+        "uniform_origin_fit": 0.7997485404094664,
+        "max_position_residual": 0.00029836269775229685,
+        "axis_scale_fit": [
+          0.7997751365242869,
+          0.7997558399191086,
+          0.799755247753726
+        ],
+        "axis_translation_fit": [
+          -2.0737746933630484e-08,
+          1.0451026161749656e-06,
+          -6.83034288626869e-06
+        ]
+      },
+      "note": null
+    },
+    "w_gax_ga01a_0.msh": {
+      "enabled": true,
+      "status": "verified_comparison_nominal_estimated",
+      "category": "Great Axes Rescaled",
+      "uniform_scale": 0.8,
+      "reference_sha256": "0edea04be532e6cd2a5318e835701cf83736dd7925e02a1cb3ebcbbca1d144cb",
+      "target_dalls_sha256": "f7972749260c716522e40e1e913849a56a50556443b93b96390f3539af6eb71e",
+      "reference_vertices": 916,
+      "reference_triangles": 890,
+      "measurement": {
+        "uniform_origin_fit": 0.7998202469075756,
+        "max_position_residual": 0.0002764361458769127,
+        "axis_scale_fit": [
+          0.7997519709589719,
+          0.799779917646009,
+          0.7998294580194515
+        ],
+        "axis_translation_fit": [
+          -2.095183630150968e-07,
+          -7.666299447122069e-07,
+          -7.707376999547637e-06
+        ]
+      },
+      "note": null
+    },
+    "w_gax_ga02a_0.msh": {
+      "enabled": true,
+      "status": "verified_comparison_nominal_estimated",
+      "category": "Great Axes Rescaled",
+      "uniform_scale": 0.85,
+      "reference_sha256": "e3ce9827a31a8375c80b5bb251472be3fa65c658ed53a33630a9cf843e21da50",
+      "target_dalls_sha256": "4a40d883f3c2c1c112beb9b928e75290d8708a6ad7fc4bcd10d0ea72da903bce",
+      "reference_vertices": 837,
+      "reference_triangles": 826,
+      "measurement": {
+        "uniform_origin_fit": 0.849768120228073,
+        "max_position_residual": 0.0003090919686404847,
+        "axis_scale_fit": [
+          0.8497353885665462,
+          0.8496910893486723,
+          0.8497676070036245
+        ],
+        "axis_translation_fit": [
+          -1.4590577111316593e-07,
+          3.035793557638609e-06,
+          2.5727812540590083e-06
+        ]
+      },
+      "note": null
+    },
+    "w_gax_ga03a_0.msh": {
+      "enabled": true,
+      "status": "verified_comparison_nominal_estimated",
+      "category": "Great Axes Rescaled",
+      "uniform_scale": 0.8,
+      "reference_sha256": "d0a965fefababce81019b95b273d0fb32164e2d743416a6ddcad84df876fd607",
+      "target_dalls_sha256": "c90bb3304e4a35155c88a38fc70e16969a0a92bedf1a604878a075df14661b5d",
+      "reference_vertices": 802,
+      "reference_triangles": 910,
+      "measurement": {
+        "uniform_origin_fit": 0.7997914494931958,
+        "max_position_residual": 0.00025814247590216777,
+        "axis_scale_fit": [
+          0.799757190751383,
+          0.7997985241801132,
+          0.7997877793114518
+        ],
+        "axis_translation_fit": [
+          -5.519819665154936e-08,
+          -4.231858415586798e-07,
+          3.2150963498869114e-06
+        ]
+      },
+      "note": null
+    },
+    "w_gax_ga04a_0.msh": {
+      "enabled": true,
+      "status": "verified_comparison_nominal_estimated",
+      "category": "Great Axes Rescaled",
+      "uniform_scale": 0.7,
+      "reference_sha256": "b63665194d2167bfba7bbc2b29e68df5bdae4c38e127f542ad21ae9d817762c1",
+      "target_dalls_sha256": "d854ec3ddfdda8e45ce7037027761a1d367a4426132033da7f7e1c64ef162ceb",
+      "reference_vertices": 809,
+      "reference_triangles": 808,
+      "measurement": {
+        "uniform_origin_fit": 0.6998045176415224,
+        "max_position_residual": 0.0002917914020679202,
+        "axis_scale_fit": [
+          0.699815050706708,
+          0.6997909626467856,
+          0.6998397123855952
+        ],
+        "axis_translation_fit": [
+          -3.781862393417864e-06,
+          4.3436507739920594e-08,
+          -3.378208118844804e-05
+        ]
+      },
+      "note": null
+    },
+    "w_gax_ga05a_0.msh": {
+      "enabled": true,
+      "status": "verified_comparison_nominal_estimated",
+      "category": "Great Axes Rescaled",
+      "uniform_scale": 0.8,
+      "reference_sha256": "32141e933e6a45af7c0523def91a83e61db65abddcb9434e9704b3b8dcf8cbd1",
+      "target_dalls_sha256": "725c56754ec2512c3dd0ee9b5015392fc96761c26bec6b2cb6f4da51fbc8b8e3",
+      "reference_vertices": 1409,
+      "reference_triangles": 1120,
+      "measurement": {
+        "uniform_origin_fit": 0.7997624606632775,
+        "max_position_residual": 0.00024204692854412624,
+        "axis_scale_fit": [
+          0.7997784073115565,
+          0.799763432833198,
+          0.7998078854057931
+        ],
+        "axis_translation_fit": [
+          -3.0418593452357086e-07,
+          -1.0364420963401534e-06,
+          8.974178981557298e-08
+        ]
+      },
+      "note": null
+    },
+    "w_gax_ga06a_0.msh": {
+      "enabled": true,
+      "status": "verified_comparison_nominal_estimated",
+      "category": "Great Axes Rescaled",
+      "uniform_scale": 0.8,
+      "reference_sha256": "c2d6d44cb848e85687e7a75f5eb979e7c65c7ce34fdcecfc1d618d29e2a1ae55",
+      "target_dalls_sha256": "900b05e655d9b0e5c1b7e62752f2ef105d3fdbfb96927fe95f219ac7fe85717e",
+      "reference_vertices": 923,
+      "reference_triangles": 946,
+      "measurement": {
+        "uniform_origin_fit": 0.79975345248634,
+        "max_position_residual": 0.0004716209935871074,
+        "axis_scale_fit": [
+          0.7997960942020584,
+          0.799788164225506,
+          0.7997275775606154
+        ],
+        "axis_translation_fit": [
+          1.035856210930232e-06,
+          -5.803395216791072e-07,
+          3.0056457968616556e-05
+        ]
+      },
+      "note": null
+    },
+    "w_gsw_dsgsa_0.msh": {
+      "enabled": true,
+      "status": "verified_comparison_nominal_estimated",
+      "category": "Great Swords Rescaled",
+      "uniform_scale": 0.85,
+      "reference_sha256": "670b2950eed84292c25650ffea2cd39e2640689667fd557e1776498a67071b3e",
+      "target_dalls_sha256": "26d77cab902e6b21532e6355dca2db69e4c72ed707a6995bcb3e5078134fe1bb",
+      "reference_vertices": 816,
+      "reference_triangles": 868,
+      "measurement": {
+        "uniform_origin_fit": 0.849721993947959,
+        "max_position_residual": 0.00044785992977902644,
+        "axis_scale_fit": [
+          0.8497262313548274,
+          0.8497449865190981,
+          0.8497202303236147
+        ],
+        "axis_translation_fit": [
+          2.574772072663984e-07,
+          -9.331889926150592e-08,
+          -6.389667313629752e-06
+        ]
+      },
+      "note": null
+    },
+    "w_gsw_gs01a_0.msh": {
+      "enabled": true,
+      "status": "verified_comparison_nominal_estimated",
+      "category": "Great Swords Rescaled",
+      "uniform_scale": 0.8,
+      "reference_sha256": "969866e70c97ced2059ce8f805a170f8aa5a828f11047c2ec5b479d2c05cc6a5",
+      "target_dalls_sha256": "76cfbbf1fa2b6b508302ab65a1c98b4bb70d2b0bb93537465c97fe9dc91664cc",
+      "reference_vertices": 592,
+      "reference_triangles": 520,
+      "measurement": {
+        "uniform_origin_fit": 0.7997174491515865,
+        "max_position_residual": 0.0004126094399605762,
+        "axis_scale_fit": [
+          0.7997692014147734,
+          0.79977940903563,
+          0.7997131884402547
+        ],
+        "axis_translation_fit": [
+          -3.353484629856456e-09,
+          -1.1878449192041062e-06,
+          1.071157001584642e-05
+        ]
+      },
+      "note": null
+    },
+    "w_gsw_gs02a_0.msh": {
+      "enabled": true,
+      "status": "verified_comparison_nominal_estimated",
+      "category": "Great Swords Rescaled",
+      "uniform_scale": 0.8,
+      "reference_sha256": "54db8232ed91510e0399caf02db2fb73a68b53246a0cdc9e160dbbb1ffe5538e",
+      "target_dalls_sha256": "9b11d19b49fcf5f1c9c04a944f95694a26ed52be716fd76bb2b974b59fa55c4d",
+      "reference_vertices": 979,
+      "reference_triangles": 810,
+      "measurement": {
+        "uniform_origin_fit": 0.7997825759432305,
+        "max_position_residual": 0.00046148376025900717,
+        "axis_scale_fit": [
+          0.7997881624858861,
+          0.7998098562906737,
+          0.7997863093017854
+        ],
+        "axis_translation_fit": [
+          9.055933227804481e-07,
+          1.141305102053075e-06,
+          -4.4287039166543286e-06
+        ]
+      },
+      "note": null
+    },
+    "w_gsw_gs03a_0.msh": {
+      "enabled": true,
+      "status": "verified_comparison_nominal_estimated",
+      "category": "Great Swords Rescaled",
+      "uniform_scale": 0.8,
+      "reference_sha256": "736ba344a700ad27a14331fc0eef3216e65b41568feea15892a1c94e82eeb9d3",
+      "target_dalls_sha256": "74425723c7cc6997a2779bab48eba7d1f63dd2428cbf11a31a2fe5935f3de3cc",
+      "reference_vertices": 606,
+      "reference_triangles": 776,
+      "measurement": {
+        "uniform_origin_fit": 0.7997215378274354,
+        "max_position_residual": 0.0003662760983069724,
+        "axis_scale_fit": [
+          0.7998082134473712,
+          0.7997975981284998,
+          0.7996904543381124
+        ],
+        "axis_translation_fit": [
+          8.872233977805568e-08,
+          7.035243628314531e-08,
+          2.1945734415011103e-05
+        ]
+      },
+      "note": null
+    },
+    "w_gsw_gs04a_0.msh": {
+      "enabled": true,
+      "status": "verified_comparison_nominal_estimated",
+      "category": "Great Swords Rescaled",
+      "uniform_scale": 0.8,
+      "reference_sha256": "ead1892d56527160c6106ad57cdfe8f49847babde52e64411e2ba207af8ec078",
+      "target_dalls_sha256": "0f736ce66508ebebf03b4d6629ce8ca8a0ba13a07a87464f7bf071e1583369a5",
+      "reference_vertices": 1118,
+      "reference_triangles": 848,
+      "measurement": {
+        "uniform_origin_fit": 0.7997692931986251,
+        "max_position_residual": 0.0003345699219157172,
+        "axis_scale_fit": [
+          0.79975970290709,
+          0.7998206196792531,
+          0.7997670575084597
+        ],
+        "axis_translation_fit": [
+          7.488614393861686e-08,
+          -5.926448488965761e-07,
+          -5.292633001611067e-07
+        ]
+      },
+      "note": null
+    },
+    "w_gsw_gs05a_0.msh": {
+      "enabled": true,
+      "status": "verified_comparison_nominal_estimated",
+      "category": "Great Swords Rescaled",
+      "uniform_scale": 0.8,
+      "reference_sha256": "4e708f50020efe224ceca87339622a584ded772b536e8520e918ea0c525caee7",
+      "target_dalls_sha256": "ef8df3b445c03da2ecdc084076287d2d870f96d82e414fdc65952bf655a5dd00",
+      "reference_vertices": 976,
+      "reference_triangles": 988,
+      "measurement": {
+        "uniform_origin_fit": 0.7997568848998517,
+        "max_position_residual": 0.00042844820427712094,
+        "axis_scale_fit": [
+          0.7997934579856971,
+          0.7997743879412216,
+          0.799727269420253
+        ],
+        "axis_translation_fit": [
+          3.7535790100503724e-06,
+          -1.5654982843093144e-06,
+          2.4633467041592967e-05
+        ]
+      },
+      "note": null
+    },
+    "w_gsw_gs06a_0.msh": {
+      "enabled": true,
+      "status": "verified_comparison_nominal_estimated",
+      "category": "Great Swords Rescaled",
+      "uniform_scale": 0.8,
+      "reference_sha256": "75a3d4fe606a3df238ebd13bd1ea23c79f439a8cdf2837a44fbe5b91c05e9fed",
+      "target_dalls_sha256": "37ed00a31961e17b0b8556f9148413c0740d96ed7df5c0057744c239839d8bb7",
+      "reference_vertices": 777,
+      "reference_triangles": 758,
+      "measurement": {
+        "uniform_origin_fit": 0.7997725588935748,
+        "max_position_residual": 0.0003298340264077382,
+        "axis_scale_fit": [
+          0.7997675353517109,
+          0.7997886221814771,
+          0.7997642946229029
+        ],
+        "axis_translation_fit": [
+          -6.418550994189377e-07,
+          -1.4300281680631496e-07,
+          6.085506745795468e-06
+        ]
+      },
+      "note": null
+    },
+    "w_gsw_gs07a_0.msh": {
+      "enabled": true,
+      "status": "verified_comparison_nominal_estimated",
+      "category": "Great Swords Rescaled",
+      "uniform_scale": 0.8,
+      "reference_sha256": "11b737b5fceb2edb1b91dc8f0f8d74d5457f75520d09ba5e3f6a2a7fa2bf92e9",
+      "target_dalls_sha256": "74425723c7cc6997a2779bab48eba7d1f63dd2428cbf11a31a2fe5935f3de3cc",
+      "reference_vertices": 606,
+      "reference_triangles": 776,
+      "measurement": {
+        "uniform_origin_fit": 0.7997215378274354,
+        "max_position_residual": 0.0003662760983069724,
+        "axis_scale_fit": [
+          0.7998082134473712,
+          0.7997975981284998,
+          0.7996904543381124
+        ],
+        "axis_translation_fit": [
+          8.872233977805568e-08,
+          7.035243628314531e-08,
+          2.1945734415011103e-05
+        ]
+      },
+      "note": "Reference mesh supplied by user as vanilla; compared directly against Dalls. Source game archive not independently established.",
+      "reference_chunk_names": [
+        "W_GSW_GS07a"
+      ],
+      "observed_dalls_chunk_names": [
+        "W_GSW_GS03a"
+      ]
+    },
+    "w_lbw_dslba_0.msh": {
+      "enabled": true,
+      "status": "verified_comparison_nominal_estimated",
+      "category": "Long Bows Rescaled",
+      "uniform_scale": 0.85,
+      "reference_sha256": "15682c1d9c8d89076828b8f59ffb5c67a2ea576ea85ab4c0b9925d1ec7a7fe2c",
+      "target_dalls_sha256": "592b6c49d3f99481e6641003fed8c956b424855cef4ed8e96fa9312f562655dd",
+      "reference_vertices": 1001,
+      "reference_triangles": 1052,
+      "measurement": {
+        "uniform_origin_fit": 0.8497369413872938,
+        "max_position_residual": 0.0005816992662937004,
+        "axis_scale_fit": [
+          0.8497391094452237,
+          0.8497066243963214,
+          0.8497556952761119
+        ],
+        "axis_translation_fit": [
+          -7.310795965589372e-08,
+          -1.4703859132161223e-06,
+          -2.189425353255529e-05
+        ]
+      },
+      "note": null
+    },
+    "w_lbw_lb01a_0.msh": {
+      "enabled": true,
+      "status": "verified_comparison_nominal_estimated",
+      "category": "Long Bows Rescaled",
+      "uniform_scale": 0.85,
+      "reference_sha256": "5336a57219ee73a707936d03a1800627ba3f63cbcd525bcf277937a10623831d",
+      "target_dalls_sha256": "d954437a0cd5992b2d06f85791f08b5001f7c5a77f5e20ec0b24fd899bb973ce",
+      "reference_vertices": 564,
+      "reference_triangles": 628,
+      "measurement": {
+        "uniform_origin_fit": 0.8497415461549951,
+        "max_position_residual": 0.00022210877305106624,
+        "axis_scale_fit": [
+          0.8497417150805795,
+          0.8496721342775672,
+          0.849742136751367
+        ],
+        "axis_translation_fit": [
+          7.3825471287178805e-09,
+          -1.0736548048864494e-06,
+          -1.561023346574622e-06
+        ]
+      },
+      "note": null
+    },
+    "w_lbw_lb02a_0.msh": {
+      "enabled": true,
+      "status": "verified_comparison_nominal_estimated",
+      "category": "Long Bows Rescaled",
+      "uniform_scale": 0.85,
+      "reference_sha256": "a13edb417f859c8de059d1226211eb54df95e6a345d5db2b09c35bdf35664ab6",
+      "target_dalls_sha256": "e22d5a4ba71069ac34079318a06884f32d987b5263bc82d2c5951f3ad858dc21",
+      "reference_vertices": 865,
+      "reference_triangles": 760,
+      "measurement": {
+        "uniform_origin_fit": 0.8496788665615889,
+        "max_position_residual": 0.000250885498758735,
+        "axis_scale_fit": [
+          0.8496744244951228,
+          0.849715328457548,
+          0.8496780061901897
+        ],
+        "axis_translation_fit": [
+          -1.9888320063525253e-09,
+          -8.864367540024077e-07,
+          -4.937582211167399e-07
+        ]
+      },
+      "note": null
+    },
+    "w_lbw_lb03a_0.msh": {
+      "enabled": true,
+      "status": "verified_comparison_nominal_estimated",
+      "category": "Long Bows Rescaled",
+      "uniform_scale": 0.85,
+      "reference_sha256": "879d806a58158907f8dacdbfe7de000b296b388dcb4233a9130c4dc84789f423",
+      "target_dalls_sha256": "453d77a8a20f4170e2458e9c521f9b7daccc3ed2e962896d54a6c9c9f1cfd885",
+      "reference_vertices": 625,
+      "reference_triangles": 654,
+      "measurement": {
+        "uniform_origin_fit": 0.84968470181625,
+        "max_position_residual": 0.00022570005358335532,
+        "axis_scale_fit": [
+          0.8497241500985919,
+          0.8496999829028669,
+          0.8496844993763579
+        ],
+        "axis_translation_fit": [
+          -4.6340868538686904e-08,
+          -6.295661959321829e-07,
+          8.504768260296041e-06
+        ]
+      },
+      "note": null
+    },
+    "w_lbw_lb04a_0.msh": {
+      "enabled": true,
+      "status": "verified_comparison_nominal_estimated",
+      "category": "Long Bows Rescaled",
+      "uniform_scale": 0.85,
+      "reference_sha256": "3b1409d139409eb325ef810e4e5f84523cdc707657ffb8e4f0f74300a1765cb3",
+      "target_dalls_sha256": "8b8de3ef4107cd7fd2e17d37354990d599496dfecf5e5acd05c9339fe1874026",
+      "reference_vertices": 810,
+      "reference_triangles": 796,
+      "measurement": {
+        "uniform_origin_fit": 0.849681992728127,
+        "max_position_residual": 0.0002764478627192979,
+        "axis_scale_fit": [
+          0.8497041201646437,
+          0.8496727533741573,
+          0.8496821999052603
+        ],
+        "axis_translation_fit": [
+          1.7976584679538181e-06,
+          5.029664048093329e-06,
+          -4.916374857777458e-07
+        ]
+      },
+      "note": null
+    },
+    "w_lbw_lb05a_0.msh": {
+      "enabled": true,
+      "status": "verified_comparison_nominal_estimated",
+      "category": "Long Bows Rescaled",
+      "uniform_scale": 0.85,
+      "reference_sha256": "573aedb2c51b62cff829b2757bad94c93b7aafc940ead19d6e69404ff1a549f2",
+      "target_dalls_sha256": "a2f7ed77cbde802a8f536dbf084c7bb1e6ef08f25a838f715f5ed33fca8d677c",
+      "reference_vertices": 788,
+      "reference_triangles": 752,
+      "measurement": {
+        "uniform_origin_fit": 0.8497309703808953,
+        "max_position_residual": 0.00026797872215511553,
+        "axis_scale_fit": [
+          0.8497253461788533,
+          0.8497154347430863,
+          0.8497347370325288
+        ],
+        "axis_translation_fit": [
+          -1.3922884374835138e-07,
+          6.641688734079471e-07,
+          1.0750227303837906e-05
+        ]
+      },
+      "note": null
+    },
+    "w_lbw_lb06a_0.msh": {
+      "enabled": true,
+      "status": "verified_comparison_nominal_estimated",
+      "category": "Long Bows Rescaled",
+      "uniform_scale": 0.85,
+      "reference_sha256": "d9d1f64533bc7d7e943250e50636db221c4863de10b2dd939fb4c36fc07597cb",
+      "target_dalls_sha256": "713bc8aa51e0b7b33160ffb7ec3bea2441df2969b7408ee227f39ad09829a37e",
+      "reference_vertices": 621,
+      "reference_triangles": 676,
+      "measurement": {
+        "uniform_origin_fit": 0.8497210899980857,
+        "max_position_residual": 0.0002305429966130701,
+        "axis_scale_fit": [
+          0.8497145143934339,
+          0.849717729246118,
+          0.8497211492914558
+        ],
+        "axis_translation_fit": [
+          -1.6135923005522302e-06,
+          1.027873321719035e-08,
+          1.7053233299548554e-06
+        ]
+      },
+      "note": null
+    },
+    "w_lsw_dssa_0.msh": {
+      "enabled": true,
+      "status": "verified_comparison_nominal_estimated",
+      "category": "Long Sword Rescaled",
+      "uniform_scale": 0.9,
+      "reference_sha256": "b524a2f86a49bfd3567019692e7ef7deef7b03fbdfff07ce46852d91d945a1d8",
+      "target_dalls_sha256": "6d81f65bab26df0110c3a88c315b866b9172fd5c8d0b48427f66f6dc33c7870b",
+      "reference_vertices": 1170,
+      "reference_triangles": 1604,
+      "measurement": {
+        "uniform_origin_fit": 0.8997534536806863,
+        "max_position_residual": 0.0002719990575363873,
+        "axis_scale_fit": [
+          0.8997108402110625,
+          0.8997461509589528,
+          0.8997627894672262
+        ],
+        "axis_translation_fit": [
+          5.194278091913518e-09,
+          -5.380296018580471e-07,
+          -5.440793630221294e-06
+        ]
+      },
+      "note": null
+    },
+    "w_lsw_ls01a_0.msh": {
+      "enabled": true,
+      "status": "verified_comparison_nominal_estimated",
+      "category": "Long Sword Rescaled",
+      "uniform_scale": 0.78,
+      "reference_sha256": "6c6cd3a7a4e4ae2d51e0d097528e0621f53879f71c4fc52a5444b0fddc24e2dc",
+      "target_dalls_sha256": "27aaea3de90d090fca562814a0c84d1c6d77dd0d6224269a7f40c44771cbd0ca",
+      "reference_vertices": 381,
+      "reference_triangles": 424,
+      "measurement": {
+        "uniform_origin_fit": 0.7797303633548481,
+        "max_position_residual": 0.00028424503123802847,
+        "axis_scale_fit": [
+          0.7797137538496864,
+          0.7797036155485961,
+          0.7797273090919319
+        ],
+        "axis_translation_fit": [
+          -1.2111170964319306e-06,
+          6.711373989435877e-07,
+          2.0197340607588282e-06
+        ]
+      },
+      "note": null
+    },
+    "w_lsw_ls02a_0.msh": {
+      "enabled": true,
+      "status": "verified_comparison_nominal_estimated",
+      "category": "Long Sword Rescaled",
+      "uniform_scale": 0.78,
+      "reference_sha256": "abdb402e6459894827f2df3abef6ec29319e9d9df260edaa5caf82692945a359",
+      "target_dalls_sha256": "4b4560c3217a544d567df97bcca1935546a332171fb6d5fe49aaf74abca5767f",
+      "reference_vertices": 1074,
+      "reference_triangles": 1072,
+      "measurement": {
+        "uniform_origin_fit": 0.7797332292146089,
+        "max_position_residual": 0.00014029356094169554,
+        "axis_scale_fit": [
+          0.7797224398874106,
+          0.7797363330401905,
+          0.7797280879535711
+        ],
+        "axis_translation_fit": [
+          2.7943249434875374e-09,
+          -1.559298199814968e-08,
+          2.0633950053413e-06
+        ]
+      },
+      "note": null
+    },
+    "w_lsw_ls03a_0.msh": {
+      "enabled": true,
+      "status": "verified_comparison_nominal_estimated",
+      "category": "Long Sword Rescaled",
+      "uniform_scale": 0.82,
+      "reference_sha256": "a99ea89dc4cc9d34d2f0a2c68700cdfe784bba8dda67dd7a0236996560b16ecf",
+      "target_dalls_sha256": "d1e59ea6eb11ea0385ac3bb097ad1307ee88d7d9f2598d897e049a716bbb022b",
+      "reference_vertices": 578,
+      "reference_triangles": 594,
+      "measurement": {
+        "uniform_origin_fit": 0.8197951689094914,
+        "max_position_residual": 0.00019094569246203008,
+        "axis_scale_fit": [
+          0.8197363529341118,
+          0.8197027082845679,
+          0.8197719254271746
+        ],
+        "axis_translation_fit": [
+          2.241472673236992e-08,
+          -4.225173713058734e-07,
+          -1.6512173419484597e-05
+        ]
+      },
+      "note": null
+    },
+    "w_lsw_ls04a_0.msh": {
+      "enabled": true,
+      "status": "verified_comparison_nominal_estimated",
+      "category": "Long Sword Rescaled",
+      "uniform_scale": 0.78,
+      "reference_sha256": "2a7ae8f20d66d344a4bab1472ccce4340dac546f2883ef7bd4bc2e70e2e3c9d8",
+      "target_dalls_sha256": "d124369d4873da1b0bfaac567d85dd711ac4e0d69353afe0dfd298a4891e256a",
+      "reference_vertices": 673,
+      "reference_triangles": 620,
+      "measurement": {
+        "uniform_origin_fit": 0.779672997591761,
+        "max_position_residual": 0.0002484323875623362,
+        "axis_scale_fit": [
+          0.7797372231980837,
+          0.7797386816643621,
+          0.7796720178568967
+        ],
+        "axis_translation_fit": [
+          -6.111285019042356e-09,
+          -8.020709152678841e-08,
+          -5.753263108470061e-07
+        ]
+      },
+      "note": null
+    },
+    "w_lsw_ls05a_0.msh": {
+      "enabled": true,
+      "status": "verified_comparison_nominal_estimated",
+      "category": "Long Sword Rescaled",
+      "uniform_scale": 0.82,
+      "reference_sha256": "55a1d13a3c3bdd002305a0902931ac144e2840f15014985f825875acf82845d7",
+      "target_dalls_sha256": "c630570c88f07fd7c092cb57453e843e08c5446e772285f4c97e9ce04b71eae6",
+      "reference_vertices": 676,
+      "reference_triangles": 878,
+      "measurement": {
+        "uniform_origin_fit": 0.8197149315620245,
+        "max_position_residual": 0.000303676227040639,
+        "axis_scale_fit": [
+          0.8197168471162418,
+          0.8197228907940394,
+          0.8197217331325594
+        ],
+        "axis_translation_fit": [
+          2.7546197093606114e-07,
+          -1.71286155362272e-07,
+          -4.530427320720571e-06
+        ]
+      },
+      "note": null
+    },
+    "w_lsw_ls06a_0.msh": {
+      "enabled": true,
+      "status": "verified_comparison_nominal_estimated",
+      "category": "Long Sword Rescaled",
+      "uniform_scale": 0.78,
+      "reference_sha256": "1def28d39e9bbe9322d15aee7347cce2d3027aa107a280119de26928835a9ffb",
+      "target_dalls_sha256": "e703b2d377ef5619a352395fc8b4c7ce6589a6c74ba738ca5759ba8f9c69fefe",
+      "reference_vertices": 627,
+      "reference_triangles": 774,
+      "measurement": {
+        "uniform_origin_fit": 0.7797139183016136,
+        "max_position_residual": 0.0002911935754218442,
+        "axis_scale_fit": [
+          0.7797480132950197,
+          0.7797548150572697,
+          0.7797105512584737
+        ],
+        "axis_translation_fit": [
+          1.5267524995559611e-07,
+          -2.4936454968908343e-06,
+          1.6453104354856345e-06
+        ]
+      },
+      "note": null
+    },
+    "w_lsw_ls07a_0.msh": {
+      "enabled": true,
+      "status": "verified_comparison_nominal_estimated",
+      "category": "Long Sword Rescaled",
+      "uniform_scale": 0.82,
+      "reference_sha256": "a9d3fb3a808ed41502aea56e32417ef8e3ac6f04469ba7bccb6d4578cf954769",
+      "target_dalls_sha256": "c630570c88f07fd7c092cb57453e843e08c5446e772285f4c97e9ce04b71eae6",
+      "reference_vertices": 676,
+      "reference_triangles": 878,
+      "measurement": {
+        "uniform_origin_fit": 0.8197149315620245,
+        "max_position_residual": 0.000303676227040639,
+        "axis_scale_fit": [
+          0.8197168471162418,
+          0.8197228907940394,
+          0.8197217331325594
+        ],
+        "axis_translation_fit": [
+          2.7546197093606114e-07,
+          -1.71286155362272e-07,
+          -4.530427320720571e-06
+        ]
+      },
+      "note": "Reference mesh supplied by user as vanilla; compared directly against Dalls. Source game archive not independently established.",
+      "reference_chunk_names": [
+        "W_LSW_LS07a"
+      ],
+      "observed_dalls_chunk_names": [
+        "W_LSW_LS05a"
+      ]
+    },
+    "w_lsw_ls08a_0.msh": {
+      "enabled": true,
+      "status": "verified_comparison_nominal_estimated",
+      "category": "Long Sword Rescaled",
+      "uniform_scale": 0.82,
+      "reference_sha256": "2a01adf2a49f0e3ae20cf302fc9b3956d8cdd7a8ddaaa2cd73bdad9d4a2e5524",
+      "target_dalls_sha256": "c630570c88f07fd7c092cb57453e843e08c5446e772285f4c97e9ce04b71eae6",
+      "reference_vertices": 676,
+      "reference_triangles": 878,
+      "measurement": {
+        "uniform_origin_fit": 0.8197149315620245,
+        "max_position_residual": 0.000303676227040639,
+        "axis_scale_fit": [
+          0.8197168471162418,
+          0.8197228907940394,
+          0.8197217331325594
+        ],
+        "axis_translation_fit": [
+          2.7546197093606114e-07,
+          -1.71286155362272e-07,
+          -4.530427320720571e-06
+        ]
+      },
+      "note": "Reference mesh supplied by user as vanilla; compared directly against Dalls. Source game archive not independently established.",
+      "reference_chunk_names": [
+        "W_LSW_LS08a"
+      ],
+      "observed_dalls_chunk_names": [
+        "W_LSW_LS05a"
+      ]
+    },
+    "w_mal_dsmla_0.msh": {
+      "enabled": true,
+      "status": "verified_comparison_nominal_estimated",
+      "category": "Mauls Rescaled",
+      "uniform_scale": 0.75,
+      "reference_sha256": "04f95f14bf6614b61ccbfc88ea30e7b97cbf3baa258d1491439d468f3b924853",
+      "target_dalls_sha256": "7a8d5163a2013704c20cd22cd8cbaa59f68b31929453f517da82402c29297d31",
+      "reference_vertices": 628,
+      "reference_triangles": 850,
+      "measurement": {
+        "uniform_origin_fit": 0.7498518695931164,
+        "max_position_residual": 0.0005309124445422864,
+        "axis_scale_fit": [
+          0.7498233159895525,
+          0.7498050872353137,
+          0.7498445975695951
+        ],
+        "axis_translation_fit": [
+          -3.283009847527896e-07,
+          9.603636744678285e-07,
+          8.47469511614827e-06
+        ]
+      },
+      "note": null
+    },
+    "w_mal_ml01a_0.msh": {
+      "enabled": true,
+      "status": "verified_comparison_nominal_estimated",
+      "category": "Mauls Rescaled",
+      "uniform_scale": 0.7,
+      "reference_sha256": "afb743d2837a27e467b75cf18e08bc27a4d6fa2915b939da06f62753118eb1f1",
+      "target_dalls_sha256": "56ed3090287ec58c0070473323b07c2ad0946cc97309c3253af01bf99e0b211f",
+      "reference_vertices": 1054,
+      "reference_triangles": 900,
+      "measurement": {
+        "uniform_origin_fit": 0.6998393693716352,
+        "max_position_residual": 0.00022795511561102266,
+        "axis_scale_fit": [
+          0.6997840798734885,
+          0.6997681576334814,
+          0.6998538651137971
+        ],
+        "axis_translation_fit": [
+          1.0724943776583794e-06,
+          5.111117740573799e-07,
+          -1.5633523377523216e-05
+        ]
+      },
+      "note": null
+    },
+    "w_mal_ml02a_0.msh": {
+      "enabled": true,
+      "status": "verified_comparison_nominal_estimated",
+      "category": "Mauls Rescaled",
+      "uniform_scale": 0.73,
+      "reference_sha256": "5d532b69fef0c210ceb6d1b9a71c7c16924d6191872ffb6861cfd2b4be945ada",
+      "target_dalls_sha256": "b2a80fef0dad8c27fea54e1d4d95073a4fc0e29310c6c41fb8dcf0e0911c75db",
+      "reference_vertices": 2082,
+      "reference_triangles": 1614,
+      "measurement": {
+        "uniform_origin_fit": 0.7297130860166232,
+        "max_position_residual": 0.000278439864413893,
+        "axis_scale_fit": [
+          0.729741048447714,
+          0.7297504865757681,
+          0.7297132528573104
+        ],
+        "axis_translation_fit": [
+          -2.4849703140665493e-08,
+          -4.379253379805419e-07,
+          -5.416820225379283e-07
+        ]
+      },
+      "note": null
+    },
+    "w_mal_ml03a_0.msh": {
+      "enabled": true,
+      "status": "verified_comparison_nominal_estimated",
+      "category": "Mauls Rescaled",
+      "uniform_scale": 0.7,
+      "reference_sha256": "74fedb5e5ba158f38d6a3afe8aca7639923deb579b13aca23068a8fa9742e909",
+      "target_dalls_sha256": "b7001c40479328e6f38e62c8293be8e91479237433ab7e67d3c22a8764dc9d0c",
+      "reference_vertices": 944,
+      "reference_triangles": 908,
+      "measurement": {
+        "uniform_origin_fit": 0.6997670802961692,
+        "max_position_residual": 0.0002248440033550958,
+        "axis_scale_fit": [
+          0.6997513833685944,
+          0.6997989839817809,
+          0.6997759819540711
+        ],
+        "axis_translation_fit": [
+          -4.122392055612201e-07,
+          2.080783957123452e-06,
+          -7.783847842829221e-06
+        ]
+      },
+      "note": null
+    },
+    "w_mal_ml04a_0.msh": {
+      "enabled": true,
+      "status": "verified_comparison_nominal_estimated",
+      "category": "Mauls Rescaled",
+      "uniform_scale": 0.7,
+      "reference_sha256": "c495d34a4142f6a07ba177fc334b6f6c2bda4084ae89945060d6bdbaaf163a10",
+      "target_dalls_sha256": "c0599f1900be176b0962f69c9751c770d68c45f730a8f6dfaa4cf1f109417aaf",
+      "reference_vertices": 790,
+      "reference_triangles": 676,
+      "measurement": {
+        "uniform_origin_fit": 0.6998093439071906,
+        "max_position_residual": 0.0002861276441127325,
+        "axis_scale_fit": [
+          0.6998083790618511,
+          0.6998466731342673,
+          0.6998193382441072
+        ],
+        "axis_translation_fit": [
+          -1.251740850401569e-06,
+          6.826809228419874e-07,
+          -1.0934075352601197e-05
+        ]
+      },
+      "note": null
+    },
+    "w_mal_ml05a_0.msh": {
+      "enabled": true,
+      "status": "verified_comparison_nominal_estimated",
+      "category": "Mauls Rescaled",
+      "uniform_scale": 0.68,
+      "reference_sha256": "7b4c4ea2431b59343a52090c5c3d332e597ee308b929fd009e3a819a8f12441c",
+      "target_dalls_sha256": "060652ca0af3271c1bd64dc023c3eb375e42c37f69d487016f1936f6232a082b",
+      "reference_vertices": 1111,
+      "reference_triangles": 862,
+      "measurement": {
+        "uniform_origin_fit": 0.6798153222498973,
+        "max_position_residual": 0.00023231198204620718,
+        "axis_scale_fit": [
+          0.6797500992000981,
+          0.6797443097058967,
+          0.6798207329782034
+        ],
+        "axis_translation_fit": [
+          1.1724476055924288e-06,
+          2.7890867398668793e-06,
+          -4.2552591055512513e-07
+        ]
+      },
+      "note": null
+    },
+    "w_mal_ml06a_0.msh": {
+      "enabled": true,
+      "status": "verified_comparison_nominal_estimated",
+      "category": "Mauls Rescaled",
+      "uniform_scale": 0.68,
+      "reference_sha256": "6936a174b0d40732018e81043b1c9401135a65b18e57c63d370a8042563e02e6",
+      "target_dalls_sha256": "b380e6071dc124d867076894d5d1ef4dfc620b5e88998e2e14069311a8f87b65",
+      "reference_vertices": 720,
+      "reference_triangles": 804,
+      "measurement": {
+        "uniform_origin_fit": 0.6797503422686352,
+        "max_position_residual": 0.0002557851285671653,
+        "axis_scale_fit": [
+          0.6797714241489257,
+          0.6797245094256358,
+          0.6797533290644812
+        ],
+        "axis_translation_fit": [
+          2.4877584308971073e-06,
+          1.336494386585244e-07,
+          -2.6553855173963156e-06
+        ]
+      },
+      "note": null
+    },
+    "w_mce_dsmca_0.msh": {
+      "enabled": true,
+      "status": "verified_comparison_nominal_estimated",
+      "category": "Maces Rescaled",
+      "uniform_scale": 0.75,
+      "reference_sha256": "29916e77400d7848dad84c827588e594db83117e41b0dc8f1183910bfac6440a",
+      "target_dalls_sha256": "9029b7973f6a1ee1f220d8e5c042ab97fdfea4174145b60e1fbe6d248c26fd43",
+      "reference_vertices": 767,
+      "reference_triangles": 882,
+      "measurement": {
+        "uniform_origin_fit": 0.7498172695586269,
+        "max_position_residual": 0.00011971192451387669,
+        "axis_scale_fit": [
+          0.7498069706731849,
+          0.7498394195763486,
+          0.7498158053210711
+        ],
+        "axis_translation_fit": [
+          -9.367455190336873e-07,
+          5.520279190686371e-09,
+          7.031195543908629e-07
+        ]
+      },
+      "note": null
+    },
+    "w_mce_mc01a_0.msh": {
+      "enabled": true,
+      "status": "verified_comparison_nominal_estimated",
+      "category": "Maces Rescaled",
+      "uniform_scale": 0.7,
+      "reference_sha256": "953547565f32a4d7fcf7fc21baa1eb61b64535890cd142501fdc5b4fafe4846b",
+      "target_dalls_sha256": "51b38d87b77eb8b365607eb22bd2de28f8b02854dcd3d74b41ba1e4dcdb1de73",
+      "reference_vertices": 527,
+      "reference_triangles": 660,
+      "measurement": {
+        "uniform_origin_fit": 0.6997751681837736,
+        "max_position_residual": 0.00027620853968324255,
+        "axis_scale_fit": [
+          0.6997724284847043,
+          0.6997629653793077,
+          0.6997625871954225
+        ],
+        "axis_translation_fit": [
+          3.8634752353990164e-07,
+          2.5423948998130464e-07,
+          7.505883875336745e-06
+        ]
+      },
+      "note": null
+    },
+    "w_mce_mc02a_0.msh": {
+      "enabled": true,
+      "status": "verified_comparison_nominal_estimated",
+      "category": "Maces Rescaled",
+      "uniform_scale": 0.7,
+      "reference_sha256": "751afdfccb599380a3d7c7b612b2bfe6c2d068f5a211a4863579e6e67a1197c6",
+      "target_dalls_sha256": "a8c9d05c2613ee296fa7a66de81dddcfe9a5dd25d494971ee726f7fbc066bd15",
+      "reference_vertices": 1694,
+      "reference_triangles": 1232,
+      "measurement": {
+        "uniform_origin_fit": 0.699817477188336,
+        "max_position_residual": 0.0003069280171169586,
+        "axis_scale_fit": [
+          0.6997388376603708,
+          0.6997383386240671,
+          0.6998040841294925
+        ],
+        "axis_translation_fit": [
+          2.8833869722376364e-07,
+          1.4986366754323194e-07,
+          9.387327614608307e-06
+        ]
+      },
+      "note": null
+    },
+    "w_mce_mc03a_0.msh": {
+      "enabled": true,
+      "status": "verified_comparison_nominal_estimated",
+      "category": "Maces Rescaled",
+      "uniform_scale": 0.7,
+      "reference_sha256": "0f44e22e7d30aa2f4f1e69ba99640900483b04be3442d4fa39943a13e5cf53a2",
+      "target_dalls_sha256": "390136b91032dfa685731ed75a750c413aeab5f458b8773f6ae0035eb034baef",
+      "reference_vertices": 4312,
+      "reference_triangles": 1542,
+      "measurement": {
+        "uniform_origin_fit": 0.6998287990225287,
+        "max_position_residual": 0.00031431256676051067,
+        "axis_scale_fit": [
+          0.6997927667883049,
+          0.6997913865408982,
+          0.6998090077347484
+        ],
+        "axis_translation_fit": [
+          7.883531418711596e-07,
+          4.829049188350544e-07,
+          1.2651686795091174e-05
+        ]
+      },
+      "note": null
+    },
+    "w_mce_mc04a_0.msh": {
+      "enabled": true,
+      "status": "verified_comparison_nominal_estimated",
+      "category": "Maces Rescaled",
+      "uniform_scale": 0.7,
+      "reference_sha256": "8490787e0e94e0cd3b6f1523766b7b53cd10e7800c982f49ddc35baaf511ec4a",
+      "target_dalls_sha256": "4351cfa808ffbee2e05a4b0697703f1f532cffe05f7e81a3121434d95704f3ca",
+      "reference_vertices": 944,
+      "reference_triangles": 844,
+      "measurement": {
+        "uniform_origin_fit": 0.6997758224073795,
+        "max_position_residual": 0.00011190267305816182,
+        "axis_scale_fit": [
+          0.6997764940023155,
+          0.6997474108552809,
+          0.6997704881787669
+        ],
+        "axis_translation_fit": [
+          -2.45081639027245e-07,
+          5.253456727007029e-08,
+          -3.1557229956491294e-06
+        ]
+      },
+      "note": null
+    },
+    "w_mce_mc05a_0.msh": {
+      "enabled": true,
+      "status": "verified_comparison_nominal_estimated",
+      "category": "Maces Rescaled",
+      "uniform_scale": 0.7,
+      "reference_sha256": "9ac1767e56c1c1ecb433ef7bb8dcd9bb70bfa90ee5ea5f485814bb5e3c364572",
+      "target_dalls_sha256": "297a2f55820dbdc40321197a94fa3fa9ee9fde3a1baa688fe2cfcd4a85117650",
+      "reference_vertices": 1929,
+      "reference_triangles": 976,
+      "measurement": {
+        "uniform_origin_fit": 0.6997688983085467,
+        "max_position_residual": 0.0001352638593491995,
+        "axis_scale_fit": [
+          0.6997807595089036,
+          0.6997793153872464,
+          0.6997438560219656
+        ],
+        "axis_translation_fit": [
+          4.142347224174327e-06,
+          2.94544226405492e-06,
+          9.45230427604153e-06
+        ]
+      },
+      "note": null
+    },
+    "w_mce_mc06a_0.msh": {
+      "enabled": true,
+      "status": "verified_comparison_nominal_estimated",
+      "category": "Maces Rescaled",
+      "uniform_scale": 0.7,
+      "reference_sha256": "80887871c3696e7e169d40e76c7ae79918b58ab805266aa0823676ee832f2af2",
+      "target_dalls_sha256": "ebb3020a2f55aaa67d80266ad470c54648bdd367bc35c1acd15a33b62840af47",
+      "reference_vertices": 1509,
+      "reference_triangles": 846,
+      "measurement": {
+        "uniform_origin_fit": 0.6998043773145995,
+        "max_position_residual": 0.0001001666999321249,
+        "axis_scale_fit": [
+          0.6997517117710289,
+          0.6998080776924542,
+          0.6998447223598048
+        ],
+        "axis_translation_fit": [
+          2.510132469129471e-07,
+          -9.353779645775201e-08,
+          -1.1431018896513085e-05
+        ]
+      },
+      "note": null
+    },
+    "w_qui_bt01a_0.msh": {
+      "enabled": true,
+      "status": "verified_comparison_nominal_estimated",
+      "category": "Quivers Rescaled",
+      "uniform_scale": 0.85,
+      "reference_sha256": "0fc745b34010f122afb2ca5cd5c7d2c75d61cf0075bb6eb4e56f6eac50726813",
+      "target_dalls_sha256": "4642c515bb3f012e510f08ce2c1311e8ca6337838f7789ee54881fd9315b9f82",
+      "reference_vertices": 1726,
+      "reference_triangles": 1074,
+      "measurement": {
+        "uniform_origin_fit": 0.8497532994068887,
+        "max_position_residual": 7.781132184178641e-05,
+        "axis_scale_fit": [
+          0.8497191725465348,
+          0.8497398578166523,
+          0.849758898646127
+        ],
+        "axis_translation_fit": [
+          -2.029050788722372e-07,
+          -6.660740874340024e-07,
+          3.801738216106869e-07
+        ]
+      },
+      "note": null
+    },
+    "w_qui_db01a_0.msh": {
+      "enabled": true,
+      "status": "verified_comparison_nominal_estimated",
+      "category": "Quivers Rescaled",
+      "uniform_scale": 0.8,
+      "reference_sha256": "577a420d3f465cd330a43044bab04c28a2010548c21f51ccaee2b37e43c3ed7b",
+      "target_dalls_sha256": "c10be001819c6508a88dcd12a7dfe11de7a3bfa91f946dcefb0fce6a5cf16a1a",
+      "reference_vertices": 1490,
+      "reference_triangles": 1032,
+      "measurement": {
+        "uniform_origin_fit": 0.7997766595442988,
+        "max_position_residual": 0.0002509281622298243,
+        "axis_scale_fit": [
+          0.799762342637694,
+          0.7997500589329095,
+          0.7997905356042418
+        ],
+        "axis_translation_fit": [
+          -4.4628912606023724e-07,
+          7.172719795651442e-07,
+          6.496423472959744e-06
+        ]
+      },
+      "note": null
+    },
+    "w_qui_dq01a_0.msh": {
+      "enabled": true,
+      "status": "verified_comparison_nominal_estimated",
+      "category": "Quivers Rescaled",
+      "uniform_scale": 0.85,
+      "reference_sha256": "e98e56373bcedd172e4161d6a6326b6e52c7e637139080b66864fe9995a6f07d",
+      "target_dalls_sha256": "e7bd938ad01794651a67a23da12a50183f831e421826fefd8184a44be95f091b",
+      "reference_vertices": 2433,
+      "reference_triangles": 1439,
+      "measurement": {
+        "uniform_origin_fit": 0.8497329806854832,
+        "max_position_residual": 0.00029606745225430053,
+        "axis_scale_fit": [
+          0.8497097530677364,
+          0.8497157084455539,
+          0.8497199844649028
+        ],
+        "axis_translation_fit": [
+          -3.142298052739007e-08,
+          -8.823274091665122e-08,
+          -9.531495815684283e-06
+        ]
+      },
+      "note": null
+    },
+    "w_qui_dq02a_0.msh": {
+      "enabled": true,
+      "status": "verified_comparison_nominal_estimated",
+      "category": "Quivers Rescaled",
+      "uniform_scale": 0.85,
+      "reference_sha256": "5c17926a222d54674290fd16934b5c9082de28d041944086e6c8e66dd9e567e0",
+      "target_dalls_sha256": "1892bd491a0b2f56ba91c7a53297ebff1ee31364fbbe7341083460b263ea0d1a",
+      "reference_vertices": 1638,
+      "reference_triangles": 1174,
+      "measurement": {
+        "uniform_origin_fit": 0.849720493279567,
+        "max_position_residual": 0.00028822014199347823,
+        "axis_scale_fit": [
+          0.8497288702276454,
+          0.8496993684591895,
+          0.8497033368034692
+        ],
+        "axis_translation_fit": [
+          -5.090006945440747e-08,
+          -3.846985394070588e-08,
+          -1.1478036179950762e-05
+        ]
+      },
+      "note": null
+    },
+    "w_qui_dq03a_0.msh": {
+      "enabled": true,
+      "status": "verified_comparison_nominal_estimated",
+      "category": "Quivers Rescaled",
+      "uniform_scale": 0.85,
+      "reference_sha256": "064e6b0c91da84341c6568f4e3f5ee2b5dcab2ee1e49b09f17ecc3ed75281e2c",
+      "target_dalls_sha256": "61f1847445e5ce68c51e6b7d59e580ddf4c77319a44908b8a731d5168b9f1938",
+      "reference_vertices": 912,
+      "reference_triangles": 932,
+      "measurement": {
+        "uniform_origin_fit": 0.8497345563978135,
+        "max_position_residual": 0.0002970576581962092,
+        "axis_scale_fit": [
+          0.8497435224125497,
+          0.8496942528634353,
+          0.8497332292685004
+        ],
+        "axis_translation_fit": [
+          -6.290136019484597e-07,
+          5.772244148187629e-07,
+          -9.388353016773961e-07
+        ]
+      },
+      "note": null
+    },
+    "w_qui_qu01a_0.msh": {
+      "enabled": true,
+      "status": "verified_comparison_nominal_estimated",
+      "category": "Quivers Rescaled",
+      "uniform_scale": 0.8,
+      "reference_sha256": "410d8aa9fa5a27e8f4c09f8abf6aa9b263b33b6ddfa224b3af3e3fb2d27d3bcc",
+      "target_dalls_sha256": "ba06b48ef18c3e0efa251998f4f0510a3c40147339467e7e4b9809892c49de0d",
+      "reference_vertices": 1197,
+      "reference_triangles": 881,
+      "measurement": {
+        "uniform_origin_fit": 0.7998065357898874,
+        "max_position_residual": 0.0001267781814273672,
+        "axis_scale_fit": [
+          0.7997676418302819,
+          0.7997702241076787,
+          0.7998067644055719
+        ],
+        "axis_translation_fit": [
+          4.548745317579038e-08,
+          4.277751615792446e-07,
+          -5.597342537344255e-07
+        ]
+      },
+      "note": null
+    },
+    "w_qui_qu02a_0.msh": {
+      "enabled": true,
+      "status": "verified_comparison_nominal_estimated",
+      "category": "Quivers Rescaled",
+      "uniform_scale": 0.8,
+      "reference_sha256": "38402d0c4a3997f40b6488db7fe49b9d6ed617d3aa92451c621a886ebac883ea",
+      "target_dalls_sha256": "b46b150e9b8a2f83839aed4bb0d7382850a9ebf294878490bed1e5f338d1e520",
+      "reference_vertices": 743,
+      "reference_triangles": 608,
+      "measurement": {
+        "uniform_origin_fit": 0.7997812763306511,
+        "max_position_residual": 0.00011908051334180714,
+        "axis_scale_fit": [
+          0.7997679947292285,
+          0.7997639306967814,
+          0.7997789845859524
+        ],
+        "axis_translation_fit": [
+          8.543444438427738e-07,
+          7.020867291020092e-07,
+          -2.656087461412899e-06
+        ]
+      },
+      "note": null
+    },
+    "w_qui_qu03a_0.msh": {
+      "enabled": true,
+      "status": "verified_comparison_nominal_estimated",
+      "category": "Quivers Rescaled",
+      "uniform_scale": 0.8,
+      "reference_sha256": "48a06826aa4a279efb38d280a9e55cdf6f64dd839b8323b9d74e9c84dce389af",
+      "target_dalls_sha256": "af5c046429da34415603a35aa3837c573d1ccf30899cfd3f9669b0eea0030efb",
+      "reference_vertices": 499,
+      "reference_triangles": 468,
+      "measurement": {
+        "uniform_origin_fit": 0.799743585131828,
+        "max_position_residual": 9.41488215415176e-05,
+        "axis_scale_fit": [
+          0.7997682268189553,
+          0.7997556831846264,
+          0.799740432478247
+        ],
+        "axis_translation_fit": [
+          7.800379330774063e-07,
+          8.308879794103349e-07,
+          -3.9779340713452846e-07
+        ]
+      },
+      "note": null
+    },
+    "w_sbw_dssba_0.msh": {
+      "enabled": true,
+      "status": "verified_comparison_nominal_estimated",
+      "category": "Short Bows Rescaled",
+      "uniform_scale": 0.85,
+      "reference_sha256": "8a62d0be889c0c00fea02aecb3e3d5db6931d437363faab9d2e4dbf7ccdf1e7a",
+      "target_dalls_sha256": "49d7a645eeb6629338acb0086520627ee153b7747929c2237671a1e48c02663f",
+      "reference_vertices": 902,
+      "reference_triangles": 840,
+      "measurement": {
+        "uniform_origin_fit": 0.8497144178790537,
+        "max_position_residual": 0.0005743822780868157,
+        "axis_scale_fit": [
+          0.8497406060554487,
+          0.8497295511414069,
+          0.8496755034321146
+        ],
+        "axis_translation_fit": [
+          2.4515739136696183e-10,
+          2.6053127305661438e-06,
+          3.603130553643595e-05
+        ]
+      },
+      "note": null
+    },
+    "w_sbw_sb01a_0.msh": {
+      "enabled": true,
+      "status": "verified_comparison_nominal_estimated",
+      "category": "Short Bows Rescaled",
+      "uniform_scale": 0.82,
+      "reference_sha256": "53ad3f4984df0e2daf8749203101164294afa571642d873fa0c6c916eff3456d",
+      "target_dalls_sha256": "b6835dc0b55b40220f68451d8f4e4559b0e7f858f0172ef602f89fb93d76853f",
+      "reference_vertices": 523,
+      "reference_triangles": 536,
+      "measurement": {
+        "uniform_origin_fit": 0.8196995411000813,
+        "max_position_residual": 0.0005038298300001909,
+        "axis_scale_fit": [
+          0.8196979420873222,
+          0.8197570160710371,
+          0.819672254589257
+        ],
+        "axis_translation_fit": [
+          -4.719119947159431e-09,
+          1.0759459096844347e-06,
+          3.3005607962769266e-05
+        ]
+      },
+      "note": null
+    },
+    "w_sbw_sb02a_0.msh": {
+      "enabled": true,
+      "status": "verified_comparison_nominal_estimated",
+      "category": "Short Bows Rescaled",
+      "uniform_scale": 0.82,
+      "reference_sha256": "0e42be4c4fa26ee42060e8e010d704bc29a7e369f5bc0147affba4a22634cb9c",
+      "target_dalls_sha256": "78edf5d89a389f8b1a45a390bff2a94784f605ec222c0e064c22c46c95768d1a",
+      "reference_vertices": 659,
+      "reference_triangles": 720,
+      "measurement": {
+        "uniform_origin_fit": 0.8196652707605374,
+        "max_position_residual": 0.00023555914533912592,
+        "axis_scale_fit": [
+          0.8197131820343564,
+          0.8197371551323025,
+          0.8196636416912595
+        ],
+        "axis_translation_fit": [
+          -7.364831078080057e-08,
+          -1.532515516410904e-06,
+          1.0350749585438932e-08
+        ]
+      },
+      "note": null
+    },
+    "w_sbw_sb03a_0.msh": {
+      "enabled": true,
+      "status": "verified_comparison_nominal_estimated",
+      "category": "Short Bows Rescaled",
+      "uniform_scale": 0.8,
+      "reference_sha256": "5d735de36e3c7710548550b5997e81ed1797b90b7f8a93ef2b2b4d949a05777d",
+      "target_dalls_sha256": "e34c5ef52d2563840300e0fc23401e1153201a8307ba6ab41d2ebfad977759ef",
+      "reference_vertices": 759,
+      "reference_triangles": 750,
+      "measurement": {
+        "uniform_origin_fit": 0.7997470100996221,
+        "max_position_residual": 0.00023238278203907559,
+        "axis_scale_fit": [
+          0.7997514210093918,
+          0.7997469631871307,
+          0.7997466377393997
+        ],
+        "axis_translation_fit": [
+          -1.1282762422821027e-06,
+          2.7957277623904236e-06,
+          2.0971600937712053e-06
+        ]
+      },
+      "note": null
+    },
+    "w_sbw_sb04a_0.msh": {
+      "enabled": true,
+      "status": "verified_comparison_nominal_estimated",
+      "category": "Short Bows Rescaled",
+      "uniform_scale": 0.83,
+      "reference_sha256": "ed445648ed1e523766a632a1db65abe2a59036f96d19ffbb8480cb4e248a9155",
+      "target_dalls_sha256": "16b49220fb4f2e7355b17c6de927a3af1a1cbef268700fc877a77e23071759d7",
+      "reference_vertices": 698,
+      "reference_triangles": 736,
+      "measurement": {
+        "uniform_origin_fit": 0.8296451157010378,
+        "max_position_residual": 0.0002554690759798417,
+        "axis_scale_fit": [
+          0.8297360832595085,
+          0.8297276573407552,
+          0.829642181577483
+        ],
+        "axis_translation_fit": [
+          -3.166407141250422e-08,
+          -2.2595081612836917e-06,
+          4.505157309787674e-07
+        ]
+      },
+      "note": null
+    },
+    "w_sbw_sb05a_0.msh": {
+      "enabled": true,
+      "status": "verified_comparison_nominal_estimated",
+      "category": "Short Bows Rescaled",
+      "uniform_scale": 0.67,
+      "reference_sha256": "af1786cef84183cf413df50d6142578bbdf010c4adebdf8574ca9fa2085b67c2",
+      "target_dalls_sha256": "4d3298143795382934eaa0dfd98c0a81ad7250627ee176ed32994fbf25c136fe",
+      "reference_vertices": 998,
+      "reference_triangles": 852,
+      "measurement": {
+        "uniform_origin_fit": 0.6697271323178359,
+        "max_position_residual": 0.00027062026932811456,
+        "axis_scale_fit": [
+          0.6697714445864723,
+          0.6697393161787731,
+          0.6697266094290751
+        ],
+        "axis_translation_fit": [
+          -5.586373034747859e-07,
+          1.6022375421640962e-06,
+          -6.654476998926157e-06
+        ]
+      },
+      "note": null
+    },
+    "w_sbw_sb06a_0.msh": {
+      "enabled": true,
+      "status": "verified_comparison_nominal_estimated",
+      "category": "Short Bows Rescaled",
+      "uniform_scale": 0.83,
+      "reference_sha256": "89ab2c5764dca578fc0caa08943d2d48a51dc9cdf856332cc3edcf759e7778f0",
+      "target_dalls_sha256": "3ca0336d0935ba5731c477a52466812e4ee13d3f8fa5bbc79483686eced4d962",
+      "reference_vertices": 852,
+      "reference_triangles": 760,
+      "measurement": {
+        "uniform_origin_fit": 0.8297066553330061,
+        "max_position_residual": 0.00030392535754719674,
+        "axis_scale_fit": [
+          0.8297093769211877,
+          0.8297040174411184,
+          0.8296739729808112
+        ],
+        "axis_translation_fit": [
+          -1.2750185827404953e-07,
+          -5.815462094972847e-06,
+          -1.8380543093188198e-07
+        ]
+      },
+      "note": null
+    },
+    "w_shd_dsla_0.msh": {
+      "enabled": true,
+      "status": "verified_comparison_nominal_estimated",
+      "category": "Shields Rescaled",
+      "uniform_scale": 1.3,
+      "reference_sha256": "8e586ed998d1e51fa621d7918ae74c597d48f90b5363cbf5a0ec89a0cb2027ee",
+      "target_dalls_sha256": "f91d69ea3b34882cc19b28fe65ca150a232893d398ff7fe892f270a8f5d1e2d3",
+      "reference_vertices": 1524,
+      "reference_triangles": 1496,
+      "measurement": {
+        "uniform_origin_fit": 1.2995613310076692,
+        "max_position_residual": 0.00026745546833906175,
+        "axis_scale_fit": [
+          1.2995676370752312,
+          1.299580417496774,
+          1.2995492394915935
+        ],
+        "axis_translation_fit": [
+          7.536375893692885e-07,
+          2.9696531608064203e-06,
+          8.983669961891276e-07
+        ]
+      },
+      "note": null
+    },
+    "w_shd_dssa_0.msh": {
+      "enabled": true,
+      "status": "verified_comparison_nominal_estimated",
+      "category": "Shields Rescaled",
+      "uniform_scale": 1.2,
+      "reference_sha256": "dc1d025b1bd7523bc2fc9836058ef0ef59fc6423adfe8a8489b16f059a986f3d",
+      "target_dalls_sha256": "e8e39b832a2c3a66517f4482545fe36b2ac620261130d6a0fc3dc8e2ace1121f",
+      "reference_vertices": 1351,
+      "reference_triangles": 1364,
+      "measurement": {
+        "uniform_origin_fit": 1.1996457654071422,
+        "max_position_residual": 0.00012145597111801187,
+        "axis_scale_fit": [
+          1.199646614510317,
+          1.1996153249107888,
+          1.199684581125222
+        ],
+        "axis_translation_fit": [
+          3.048806954648736e-07,
+          -2.955771198847951e-06,
+          -9.549074204313481e-07
+        ]
+      },
+      "note": null
+    },
+    "w_shd_srda_0.msh": {
+      "enabled": true,
+      "status": "verified_comparison_nominal_estimated",
+      "category": "Shields Rescaled",
+      "uniform_scale": 0.8,
+      "reference_sha256": "0ee07f16e5948830423ac88aeb8c85aa751bd02e843c50c91e94f7cc179daca5",
+      "target_dalls_sha256": "c6c448c03ff62df87278d58589abc3685f7106be18bc754e00b7be6c3921a03f",
+      "reference_vertices": 1195,
+      "reference_triangles": 1184,
+      "measurement": {
+        "uniform_origin_fit": 0.7997680970641771,
+        "max_position_residual": 0.0001213707924353491,
+        "axis_scale_fit": [
+          0.7997895048010855,
+          0.7997491425861357,
+          0.7997858872383992
+        ],
+        "axis_translation_fit": [
+          -2.114555748773294e-07,
+          -2.43511516651107e-06,
+          -5.083907795118343e-07
+        ]
+      },
+      "note": null
+    },
+    "w_shd_twra_0.msh": {
+      "enabled": true,
+      "status": "verified_comparison_nominal_estimated",
+      "category": "Shields Rescaled",
+      "uniform_scale": 1.26,
+      "reference_sha256": "fd5e903f532723be99e34eeef8fa3c46aee795bd9be12312ca2d4fb6a9d769e6",
+      "target_dalls_sha256": "935a066df9e9caa31a0d3bab6b1439f3979e94b012ec6593fd52ed7f352350c7",
+      "reference_vertices": 889,
+      "reference_triangles": 902,
+      "measurement": {
+        "uniform_origin_fit": 1.2595160508092993,
+        "max_position_residual": 0.00015104114946057345,
+        "axis_scale_fit": [
+          1.2595595721381967,
+          1.259472820010732,
+          1.259581062477692
+        ],
+        "axis_translation_fit": [
+          6.75515230745936e-07,
+          -3.6943150001859463e-06,
+          4.830422556446392e-08
+        ]
+      },
+      "note": null
+    },
+    "w_shd_twra_01.msh": {
+      "enabled": true,
+      "status": "verified_comparison_nominal_estimated",
+      "category": "Shields Rescaled",
+      "uniform_scale": 1.26,
+      "reference_sha256": "231a0946f0e7ea15091f1c415e68887dba1b4d74af8db1ff50dfc84e64c0d247",
+      "target_dalls_sha256": "ca7445ddfe61bda19e8597cba959000a10e315c96566f123fd4e5883054386cf",
+      "reference_vertices": 889,
+      "reference_triangles": 902,
+      "measurement": {
+        "uniform_origin_fit": 1.2595160508092993,
+        "max_position_residual": 0.00015104114946057345,
+        "axis_scale_fit": [
+          1.2595595721381967,
+          1.259472820010732,
+          1.259581062477692
+        ],
+        "axis_translation_fit": [
+          6.75515230745936e-07,
+          -3.6943150001859463e-06,
+          4.830422556446392e-08
+        ]
+      },
+      "note": null
+    },
+    "w_shd_twrb_0.msh": {
+      "enabled": true,
+      "status": "verified_comparison_nominal_estimated",
+      "category": "Shields Rescaled",
+      "uniform_scale": 1.26,
+      "reference_sha256": "720663d45d75559d7388259d4c4b20ae6728fe9665482bdbd99a5e233b39796d",
+      "target_dalls_sha256": "1be99f6a9b63fe8572d99f4198c78ebdb23a6553d43e2d3f8feb3e1f53e8c352",
+      "reference_vertices": 920,
+      "reference_triangles": 902,
+      "measurement": {
+        "uniform_origin_fit": 1.2595259189017205,
+        "max_position_residual": 0.00015449454890892333,
+        "axis_scale_fit": [
+          1.2595515285965193,
+          1.2595055306039922,
+          1.2596003662462656
+        ],
+        "axis_translation_fit": [
+          7.517666297627762e-07,
+          1.2810715743132943e-06,
+          -4.6367968755058323e-07
+        ]
+      },
+      "note": null
+    },
+    "w_stf_dssta_0.msh": {
+      "enabled": true,
+      "status": "verified_comparison_nominal_estimated",
+      "category": "Staves Rescaled",
+      "uniform_scale": 0.85,
+      "reference_sha256": "52efc92eb6260a220871c0eaa67d1f8b13aacf2c5b5db7c442bc27c949381f51",
+      "target_dalls_sha256": "68b2d128ae3d7404a1c0d037c5fca4b8eb32fcfad07c3cede493f2d28256e92b",
+      "reference_vertices": 406,
+      "reference_triangles": 298,
+      "measurement": {
+        "uniform_origin_fit": 0.8497136210902709,
+        "max_position_residual": 0.0002615281824326354,
+        "axis_scale_fit": [
+          0.8497047645405341,
+          0.849722369031117,
+          0.8496935061500981
+        ],
+        "axis_translation_fit": [
+          -5.492819301784438e-07,
+          -6.029529049206075e-07,
+          2.2997375792164355e-05
+        ]
+      },
+      "note": null
+    },
+    "w_stf_st01.msh": {
+      "enabled": true,
+      "status": "verified_comparison_nominal_estimated",
+      "category": "Staves Rescaled",
+      "uniform_scale": 0.85,
+      "reference_sha256": "ce812c181e05425e34e215b8414df429ed7b5f62b4b9f2c1e9dc06f9f2249aeb",
+      "target_dalls_sha256": "7720347d6e619e33982424a7bd94981190dee8480d435af272d919124a4654a1",
+      "reference_vertices": 438,
+      "reference_triangles": 410,
+      "measurement": {
+        "uniform_origin_fit": 0.849774409791713,
+        "max_position_residual": 0.000297868923882616,
+        "axis_scale_fit": [
+          0.8497217171740042,
+          0.8497589298814927,
+          0.8497801665341634
+        ],
+        "axis_translation_fit": [
+          -6.785494003894356e-07,
+          7.18536355176214e-07,
+          -7.530543944304227e-06
+        ]
+      },
+      "note": null,
+      "accepted_references": [
+        {
+          "enabled": true,
+          "reference_sha256": "8b2b7e6a3f219d918f92bdc6179c087c3e26848684950c44003695a35f4a40ac",
+          "uniform_scale": 0.85,
+          "label": "Enchanters Staff Refined, original size"
+        },
+        {
+          "enabled": true,
+          "reference_sha256": "a3f87647f389394dc1e00d683fa0b8f904644b6593c34d9424b5a4471bbc6e9e",
+          "uniform_scale": 1.0,
+          "label": "Enchanters Staff Refined, already scaled to 85 percent"
+        },
+        {
+          "enabled": true,
+          "reference_sha256": "e8c4eff0a9eb07323faa71bcc64a6338240d00e3e53aa7df5a31b8ee9b2442b8",
+          "uniform_scale": 0.85,
+          "label": "Enchanters Staff Refined, updated compact mesh, original size"
+        },
+        {
+          "enabled": true,
+          "reference_sha256": "0291b8df48c8f89c0cbe1d2f3e4fbd62e30b3b2aafe431264cf6e399de5e9fa2",
+          "uniform_scale": 1.0,
+          "label": "Enchanters Staff Refined, updated compact mesh, already scaled to 85 percent"
+        }
+      ]
+    },
+    "w_stf_st01a_0.msh": {
+      "enabled": true,
+      "status": "verified_comparison_nominal_estimated",
+      "category": "Staves Rescaled",
+      "uniform_scale": 0.85,
+      "reference_sha256": "39ce5b7650eea60fee8f774e16f23fda0758f63ac6f27a52cafe93049bc4391e",
+      "target_dalls_sha256": "bb4a1e7921e568c441e8765f74874a0657f84fd5621ea624e7070b38a1699635",
+      "reference_vertices": 438,
+      "reference_triangles": 410,
+      "measurement": {
+        "uniform_origin_fit": 0.8497651297991226,
+        "max_position_residual": 0.00029104033558480236,
+        "axis_scale_fit": [
+          0.8497217171740042,
+          0.8497589298814927,
+          0.8497485861749422
+        ],
+        "axis_translation_fit": [
+          -6.785494003894356e-07,
+          7.18536355176214e-07,
+          1.8150602186630636e-05
+        ]
+      },
+      "note": null,
+      "accepted_references": [
+        {
+          "enabled": true,
+          "reference_sha256": "995712cdf8905ae9b02f956154a54938763c7e48806c2d807153c0ed4c945edd",
+          "uniform_scale": 0.85,
+          "label": "Enchanters Staff Refined, original size"
+        },
+        {
+          "enabled": true,
+          "reference_sha256": "2c0adb58f9ec109bfa6f0f866a0aac697a721614c2322e63dd41b7a3d56462db",
+          "uniform_scale": 1.0,
+          "label": "Enchanters Staff Refined, already scaled to 85 percent"
+        },
+        {
+          "enabled": true,
+          "reference_sha256": "450a0ee8fcaf06907bc7d5ce10530e3f73ede10f5383078c80c912897af1a544",
+          "uniform_scale": 0.85,
+          "label": "Enchanters Staff Refined, updated compact mesh, original size"
+        },
+        {
+          "enabled": true,
+          "reference_sha256": "c8a55bfb0364b45cae176df732424f4ded26b96183ef0dae45afedea9221ba64",
+          "uniform_scale": 1.0,
+          "label": "Enchanters Staff Refined, updated compact mesh, already scaled to 85 percent"
+        }
+      ]
+    },
+    "w_stf_st02.msh": {
+      "enabled": true,
+      "status": "verified_comparison_nominal_estimated",
+      "category": "Staves Rescaled",
+      "uniform_scale": 0.85,
+      "reference_sha256": "5efe1512cc0d8e4e33f65470da05e3e3f5ae746967280552b5badffbb5f7fe49",
+      "target_dalls_sha256": "abbe7f9628d05156b46014eb272a4466702ec671c94ca9265612ebe0161b4021",
+      "reference_vertices": 497,
+      "reference_triangles": 346,
+      "measurement": {
+        "uniform_origin_fit": 0.8497761264484008,
+        "max_position_residual": 0.00026083526205422647,
+        "axis_scale_fit": [
+          0.8497743475150613,
+          0.8497098689370997,
+          0.8497807786696276
+        ],
+        "axis_translation_fit": [
+          -1.5764253470454886e-07,
+          8.796356578076494e-08,
+          -7.578009779676724e-06
+        ]
+      },
+      "note": null
+    },
+    "w_stf_st02a_0.msh": {
+      "enabled": true,
+      "status": "verified_comparison_nominal_estimated",
+      "category": "Staves Rescaled",
+      "uniform_scale": 0.92,
+      "reference_sha256": "8b2f1666b2d537ed9957268f736576290dd5d03cd77304ece12140a627e25254",
+      "target_dalls_sha256": "78e83c6a96043eb7f6da514f76ad32b1293eefed38ae34607d9e1f66035152b4",
+      "reference_vertices": 497,
+      "reference_triangles": 346,
+      "measurement": {
+        "uniform_origin_fit": 0.9196971355715309,
+        "max_position_residual": 0.00015379299701506755,
+        "axis_scale_fit": [
+          0.9197064956444899,
+          0.9197500194036734,
+          0.9196786542440186
+        ],
+        "axis_translation_fit": [
+          -1.2891164750577248e-07,
+          -4.3757337174879054e-07,
+          2.0557521393426175e-05
+        ]
+      },
+      "note": null
+    },
+    "w_stf_st03a_0.msh": {
+      "enabled": true,
+      "status": "verified_comparison_nominal_estimated",
+      "category": "Staves Rescaled",
+      "uniform_scale": 0.85,
+      "reference_sha256": "f70867d9bce71d2d991e07d9c623ca3f5cb8b725566252057845abd21d32b0b1",
+      "target_dalls_sha256": "41cb84b940de9b1277efeabfe669a707688b33c356f46d60f0d34f5ed0088925",
+      "reference_vertices": 407,
+      "reference_triangles": 332,
+      "measurement": {
+        "uniform_origin_fit": 0.8497518758651811,
+        "max_position_residual": 0.000305518435445129,
+        "axis_scale_fit": [
+          0.8496871995241313,
+          0.849698027051044,
+          0.8497362611460352
+        ],
+        "axis_translation_fit": [
+          2.990201875095939e-07,
+          3.4042438597540487e-07,
+          1.5721717743367067e-05
+        ]
+      },
+      "note": null
+    },
+    "w_wnd_wd03a_0.msh": {
+      "enabled": true,
+      "status": "verified_comparison_nominal_estimated",
+      "category": "Staves Rescaled",
+      "uniform_scale": 0.8,
+      "reference_sha256": "55ebb7239e6ca15b4ec0bb22711ad5a7c21a77c50afc92c6f887eb3a886e62ad",
+      "target_dalls_sha256": "5de5b8fad43f8e719769506bc40da025b85a965b2fb92f2d4e16f7a4dcdcfcf5",
+      "reference_vertices": 247,
+      "reference_triangles": 338,
+      "measurement": {
+        "uniform_origin_fit": 0.7997772426378734,
+        "max_position_residual": 0.0002507490392115175,
+        "axis_scale_fit": [
+          0.7997800807936861,
+          0.7998034266155291,
+          0.7998599800589584
+        ],
+        "axis_translation_fit": [
+          7.068127668346541e-08,
+          1.2120968552578966e-05,
+          -2.52972780378892e-06
+        ]
+      },
+      "note": null
+    },
+    "w_stf_apca_0.msh": {
+      "enabled": true,
+      "status": "user_defined_custom",
+      "category": "Custom Staves",
+      "label": "Apostate's Courage",
+      "uniform_scale": 0.85,
+      "reference_sha256": "94911028652ec58ac51d494d6f896055b829a8ccd2b1c564ce7a363078f55be2",
+      "native_scale_reference": 1.0,
+      "target_dalls_sha256": null,
+      "note": "User-selected factor 0.85 relative to the exact installed custom mesh. No vanilla equivalent or Dalls comparison is claimed."
+    },
+    "w_sbw_sb07a_0.msh": {
+      "enabled": true,
+      "status": "user_defined_custom",
+      "category": "Custom Short Bows",
+      "label": "Bregan's Bow",
+      "uniform_scale": 0.85,
+      "reference_sha256": "7f6b8dfb97de297bd4af1a7bb8c36fb8bbc1bece626ae7d7ad4b1076821250d6",
+      "native_scale_reference": 1.0,
+      "target_dalls_sha256": null,
+      "note": "User-selected factor 0.85 relative to the original Origins promotional DLC mesh. Not measured from Dalls."
+    },
+    "w_shd_seaa_0.msh": {
+      "enabled": true,
+      "status": "user_defined_custom",
+      "category": "Custom Shields",
+      "label": "Bulwark of the True King",
+      "uniform_scale": 1.0,
+      "reference_sha256": "a75089bd29061cb74b67629e0d815503c4fcd5904c2086ea310c9145c8f48e39",
+      "native_scale_reference": 1.0,
+      "target_dalls_sha256": null,
+      "note": "User-selected explicit factor 1.0 preserves original mesh scale independently of UnknownWeaponScale. Creature scaling remains independent."
+    }
+  }
+}
