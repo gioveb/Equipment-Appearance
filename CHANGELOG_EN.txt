@@ -3,14 +3,14 @@ Equipment Appearance - Changelog
 0.2.1
 - Fix helmet visibility changes between dialogue and cutscene transitions.
 - Apply scene visibility to verified live actors beyond the hero/current speaker.
-- Preserve per-character hidden choices; user confirmed Captured! and save/load.
+- Preserve per-character hidden choices; user confirmed during Captured! quest and save/load.
 - Include scale table 1.3.3 (99 mesh entries): Bregan's Bow 0.85;
-  Bulwark of the True King 1.0; updated Enchanter's Staff Refined hashes.
-- Original-size Refined ST01 uses 0.85; its already-reduced version uses 1.0.
+  Bulwark of the True King 1.0; updated Enchanter's Staff Refined hashes;
+  Original-size Refined ST01 uses 0.85; its already-reduced version uses 1.0.
 - Existing HEELS, camera, Full Body and weapon-scaling logic unchanged from 0.2.0.
 
 0.2.0
-- Add independent per-model weapon scaling and creature race/sex multipliers.
+- Add independent per-model weapon scaling and creature race/gender multipliers.
 - Add darkspawn exemption from the creature factor and UnknownWeaponScale.
 - Incorporate the user-tested Weapon Scale Test 6 implementation.
 
