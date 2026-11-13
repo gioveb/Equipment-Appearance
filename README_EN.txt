@@ -10,7 +10,7 @@ REQUIREMENTS
   ABI and address files remain compatible; a full in-game test with that loader
   is not yet recorded. Follow DAOLib's own installation instructions.
 - Extended Variations is optional and separate; retain it for extended-ID items.
-- No Helmet Hack is not required.
+- "No Helmet Hack" is not required.
 
 INSTALLATION (MANUAL ZIP, NOT DAZIP)
 Close DAO and the Toolset first.
@@ -45,7 +45,7 @@ Use the new commented INI and reapply your preferred values; preserve and merge
 any personal JSON entries. Keep only one Equipment Appearance DLL.
 Unchanged matching support resources need not be reinstalled. No save conversion
 is required. Save after changing a character's helmet visibility preference.
-If migrating from No Helmet Hack, restore helmets with its book before removing
+If migrating from "No Helmet Hack", restore helmets with its book before removing
 that mod: Equipment Appearance does not recover items in another equipment slot.
 
 FEATURES AND DEFAULTS
@@ -58,7 +58,6 @@ PartyPickerVisibility=1 makes companion selection follow the character choice;
 0 leaves the game's native helmet behaviour in that room.
 SaveCharacterPreference=1 saves EA_HIDE_HELMET as a character-local INT.
 No var_creature.gda is required. Set it to 0 for session-only choices.
-Ear hiding / HLM_HIDE_EARS is NOT implemented.
 
 HEELS: supported boots and rob-type torso items may contain HEELS, a FLOAT in
 centimetres (5.0 means 5 cm). The mesh must already be authored for heels, with
